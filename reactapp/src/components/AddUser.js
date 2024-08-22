@@ -9,6 +9,10 @@ margin:5% 0 0 25%;
 & >div{
 margin-top:20px;
 }
+& >Button{
+    margin-top:10px;
+
+}
 `
 const initialValue={
     username:'',
