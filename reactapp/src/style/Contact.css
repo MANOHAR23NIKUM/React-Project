@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin:0 6% 6% 6%;
+    background-color: rgb(223, 222, 222);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(92, 91, 91);
+}
+.contactform{
+    width: 45%;
+    background-color: rgb(223, 222, 222);
+    flex-direction: column;
+    padding: 2%;
+}
+h1{
+    text-align: center;
+}
+input{
+   background-color: white;
+   width: 100%;
+   height: 5vh;
+   border: none;
+   outline: none;
+   margin-top: 5px;  
+   padding: 4px;  
+
+}
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    
+}
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.styleicons{
+    margin-left: 3%;
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+.styleicons:hover{
+   background-color: #e0561a;
+   color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactform{
+        width: 95%;
+    }
+    .contactinfo{
+       margin-left: 20px;
+       margin-bottom: 10px;
+    }
+}
