@@ -25,8 +25,10 @@ const Navbar = () => {
                     <Tabs to="/">Home</Tabs>
                     <Tabs to="/about">About</Tabs>
                     <Tabs to="/contact">Contact</Tabs>
+                    <Tabs to="/services">Services</Tabs> 
                     {/* <Tabs to="/add">AddUser</Tabs> */}
                     <Tabs to="/all">AllUser</Tabs> 
+                    
                   </div>
                 <div className='righttab1'>
                     <Tabs>Sign In</Tabs>

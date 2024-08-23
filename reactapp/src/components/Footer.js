@@ -24,15 +24,30 @@ const Footer = () => {
                         <WhatsAppIcon  className='styleicon'></WhatsAppIcon>
                     </IconButton>     
                 </Link> */}
-      <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
-             <WhatsAppIcon className='styleicon' />
-      </Link>
+                <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
+                        <WhatsAppIcon className='styleicon' />
+                 </Link>
+
                 {/* <WhatsAppIcon className='styleicon' /> */}
-                <InstagramIcon  className='styleicon'></InstagramIcon>
-                <FacebookIcon  className='styleicon'></FacebookIcon>
-                <TwitterIcon  className='styleicon'></TwitterIcon>
-                <PinterestIcon  className='styleicon'></PinterestIcon>
-                <YouTubeIcon className='styleicon'></YouTubeIcon>
+                <Link color="inherit" target="_blank" href="https://www.instagram.com/instagram/">
+                        <InstagramIcon  className='styleicon'></InstagramIcon>
+                </Link>
+
+                  <Link color="inherit" target="_blank" href="https://www.facebook.com/<username>">
+                    <FacebookIcon  className='styleicon'></FacebookIcon>
+                </Link>
+
+                <Link color="inherit" target="_blank" href="https://twitter.com/<username>">
+                    <TwitterIcon  className='styleicon'></TwitterIcon>
+                </Link>
+
+                <Link color="inherit" target="_blank" href="https://www.pinterest.com/<username>/">
+                    <PinterestIcon  className='styleicon'></PinterestIcon>
+                </Link>
+
+                <Link color="inherit" target="_blank" href="https://www.youtube.com">
+                    <YouTubeIcon className='styleicon'></YouTubeIcon>
+                </Link>
 
                 {/* <a href="https://wa.me/+919763858978" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                     <IconButton>

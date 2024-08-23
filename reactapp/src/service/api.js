@@ -23,9 +23,9 @@ export const allUser=async()=>{
 
 // get single data
 
-export const getSingleUser=async(data)=>{
+export const getSingleUser=async(id)=>{
     try{
-        return await axios.get(`${API_URL}/${data}`);
+        return await axios.get(`${API_URL}/${id}`);
     }catch(error){
         console.log('error while getting single User ',error.message);
     }   

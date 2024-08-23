@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import EditUser from './components/EditUser';
 import SignUp from './components/SignUp';
 import Footer from './components/Footer';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path='/contact' element={<Contact/>}/>
-          {/* <Route path="/add" element={<AddUser/>} /> */}
+          <Route path='/services' element={<Services/>}/>
+          <Route path="/add" element={<AddUser/>} />
           <Route path="/add" element={<SignUp/>} />
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>

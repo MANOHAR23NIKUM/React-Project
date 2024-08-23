@@ -1,19 +1,95 @@
 {
   "users": [
     {
-      "id": "7c9d",
-      "username": "ram",
-      "email": "ram@gmail.com",
+      "id": "1",
+      "username": "manohar",
+      "email": "nikum@gmail.com",
       "city": "ndb",
-      "phone": "35346743746",
-      "undefined": "nd"
+      "phone": "3234456745",
+      "images": [
+        {
+          "url": "images/Carousel1.jpg",
+          "title": "Image 1",
+          "description": " This is image description "
+        }
+      ]
     },
     {
-      "id": "f34c",
-      "username": "vaishnavi",
-      "email": "vaishnavi@gmail.com",
-      "city": "Pune",
-      "phone": "9832989838"
+      "id": "7c9d",
+      "username": "ritesh",
+      "email": "ritesh@gmail.com",
+      "city": "ndb",
+      "phone": "35346743746",
+      "images": [
+        {
+          "url": "images/Carousel3.jpg",
+          "title": "Image 2",
+          "description": " This is image description "
+        }
+      ]
+    },
+    {
+      "id": "11f3",
+      "username": "ritesh",
+      "email": "ritesh@gmail.com",
+      "city": "nagar",
+      "phone": "3234344556",
+      "images": [
+        {
+          "url": "images/Carousel3.jpg",
+          "title": "Image 3",
+          "description": " This is image description "
+        }
+      ]
+    }
+  ],
+  "AboutUS": [
+    {
+      "url": "images/python1.jpg",
+      "id": "8990"
+    }
+  ],
+  "BackgroundImages": [
+    {
+      "cardsSection": "",
+      "id": "96b2"
+    }
+  ],
+  "Cardsimg": [
+    {
+      "images": [
+        {
+          "url": "images/css3.jpg",
+          "title": "CSS3",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/HTML5.jpg",
+          "title": "HTML5",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/java.jpg",
+          "title": "Java",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/react.jpg",
+          "title": "React",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/python.jpg",
+          "title": "python",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/python1.jpg",
+          "title": "Bootstrap",
+          "description": " This is image description "
+        }
+      ],
+      "id": "c251"
     }
   ]
 }
