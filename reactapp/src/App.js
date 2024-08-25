@@ -3,13 +3,12 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
-import AddUser from './components/AddUser';
 import AllUser from './components/AllUser';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import EditUser from './components/EditUser';
-import SignUp from './components/SignUp';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -20,8 +19,6 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path='/contact' element={<Contact/>}/>
-          {/* <Route path="/add" element={<AddUser/>} /> */}
-          <Route path="/add" element={<SignUp/>} />
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>
       </Routes> 

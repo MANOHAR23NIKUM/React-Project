@@ -1,40 +1,19 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5%;
-    background-color: rgb(31, 30, 30);
-    padding: 10px;
-    max-width: 100%;
-    color: white;
-}
-.icons{
-   margin-left: 37%; 
+
+
+.logoimg img{
+    height: 100px;
+    width: 100px;
 }
 .styleicon{
-     margin-left: 3%;
-     background-color: white;
-     padding: 5px;
-     border-radius: 50%;
-     color: black;
-     border: 2px solid black;
-
+    margin-left: 3%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid black;
 }
 .styleicon:hover{
-    background-color: #f54c04;
-    border:2px solid white;
-    box-shadow: 0 1px 5px rgb(184, 168, 168);
-}
-.copyrightcont{
-    background-color: black;
-    padding: 4px;
-    color: white;
-    text-align: center;
-}
-
-@media only screen and (max-width: 600px){
-  
-    .icons{
-        margin-left: 22%;
-    }
+   background-color: #f54c04;
+   border:2px solid white;
+   box-shadow: 0 1px 5px rgb(184, 168, 168);
 }

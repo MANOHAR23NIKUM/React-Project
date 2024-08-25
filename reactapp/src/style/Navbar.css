@@ -1,25 +1,7 @@
-.navbar{
-    background: radial-gradient(circle, rgb(189 245 205) 22%, rgba(219,219,220,1) 68%, rgb(59, 131, 194) 100%);
-    
-}
+
 .logo img{
-    width: 7vw;
+    height: 40px;
+    width: 80px;
     margin-right: 20px;
-    padding: 2px;
-}
-.righttab1{
-    margin-left: 40%;
-    font-size: 1vw;
-}
-.righttab{
-    margin-left: 2%;
-    font-size: 1vw;
-}
-@media only screen and (max-width: 600px){
-    .navbar{
-        width: 100%;
-    }
-    .righttab1{
-        margin-left: 25%;
-    }
+
 }
