@@ -1,14 +1,12 @@
-
-
 .logoimg img{
     height: 100px;
     width: 100px;
 }
 .styleicon{
-    margin-left: 3%;
+    margin-left: 2%;
     background-color: white;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 6px;
     color: black;
     border: 2px solid black;
 }

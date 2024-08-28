@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "7c9d",
-      "username": "ram",
-      "email": "ram@gmail.com",
-      "city": "ndb",
-      "phone": "35346743746"
-    },
-    {
       "id": "f34c",
       "username": "vaishnavi",
       "email": "vaishnavi@gmail.com",
@@ -15,11 +8,20 @@
       "phone": "9832989838"
     },
     {
-      "id": "7b13",
-      "username": "",
-      "email": "",
-      "phone": "",
-      "message": ""
+      "id": "6ea7",
+      "contactuser": "Akshada",
+      "useremail": "akshada@gmail.com",
+      "contact": "983423904",
+      "message": "xassssdadqdw"
+    }
+  ],
+  "contactus": [
+    {
+      "contactuser": "Vaishnavi",
+      "useremail": "vaishnavi@gmail.com",
+      "contact": "9876543210",
+      "message": "Hello",
+      "id": "f9b6"
     }
   ]
 }

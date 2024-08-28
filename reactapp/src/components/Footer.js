@@ -11,14 +11,14 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Muigridfooter = () => {
   return (
     <>
-      <div style={{backgroundColor:'black', color:'white'}}>
+      <div style={{backgroundColor:'rgb(66, 65, 65)', color:'white'}}>
         <Container>
         <Grid container spcing={3}>
           <Grid item xs={12} sm={6} md={4} lg={3} >
             <Typography variant="h4" sx={{ margin: "15px"  }} className="logoimg">
-                <img src='http://hematitecorp.com/assets/images/logo.png' />
+                <img src='http://hematitecorp.com/assets/images/logo.png' alt="Logoimg" />
             </Typography>
-            <Typography variant="h3" sx={{ margin: "15px"}}>
+            <Typography variant="h4" sx={{ margin: "15px"}}>
               {" "} 
               Educational Website
             </Typography>
@@ -26,7 +26,7 @@ const Muigridfooter = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Typography variant="" sx={{ margin: "15px"  }}>
-               <p>
+               <p style={{textAlign:'justify'}}>
                Our motto is to create sustainable and self supportive communities. We facilitate people to 
                  identify their community issues and act upon to resolve those issues. We raise the consciousness 
                  level of the people and establish community based organization. The formation of these community 
@@ -34,11 +34,11 @@ const Muigridfooter = () => {
                </p>
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Typography variant="h4" sx={{ margin: "30px" }}>
+          <Grid item xs={12} sm={6} md={4} lg={3} style={{marginLeft:'50px'}}>
+            <Typography variant="h4" sx={{ margin: "30px"}}>
                Get In Touch
             </Typography>
-            <Typography variant="h6" sx={{ margin: "30px" }}>
+            <Typography variant="h6" sx={{ marginLeft: "30px" }}>
               {" "}
               <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
                          <WhatsAppIcon className='styleicon' fontSize="large" />
@@ -49,7 +49,11 @@ const Muigridfooter = () => {
                  <Link color="inherit" target="_blank" href="https:www.facebook.com/<username>">
                      <FacebookIcon  className='styleicon' fontSize="large"></FacebookIcon>
                  </Link>
-                 <Link color="inherit" target="_blank" href="https:twitter.com/<username>">
+                
+            </Typography>
+            <Typography variant="h3" sx={{ marginLeft: "30px" }}>
+              {" "} 
+              <Link color="inherit" target="_blank" href="https:twitter.com/<username>">
                      <TwitterIcon  className='styleicon' fontSize="large"></TwitterIcon>
                  </Link>
                         
@@ -63,9 +67,6 @@ const Muigridfooter = () => {
             </Typography>
           
           </Grid>
-
-
-
         </Grid>
         </Container>
       </div>

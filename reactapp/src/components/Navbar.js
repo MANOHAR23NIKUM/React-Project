@@ -34,12 +34,12 @@ const StyledNavbarCollapse = styled(Navbar.Collapse)`
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar" style={{background:'rgb(46, 45, 45)',}}>
+    <Navbar collapseOnSelect expand="lg" className="navbar" style={{background:'rgb(46, 45, 45)'}}>
       <Container>
         <Navbar.Brand href="/home" className='logo'>
-              <img src='http://hematitecorp.com/assets/images/logo.png'/>
+              <img src='http://hematitecorp.com/assets/images/logo.png' alt='Logoimg'/>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ backgroundColor:'white' ,color:'white'}} />
         <StyledNavbarCollapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{fontSize:'20',fontWeight:'500'}}>
             <StyledNavLink href="/">Home</StyledNavLink>

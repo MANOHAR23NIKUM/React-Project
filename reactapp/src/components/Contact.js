@@ -11,23 +11,33 @@ import { addUser } from '../service/api';
 
 
 const initialValue = {
-username:'',
-email:'',
-phone:'',
+contactuser:'',
+useremail:'',
+contact:'',
 message:''
 }
 
 const Contact = () => {
    
-  const [user,setUser]=useState(initialValue);
+  const [contactus,setContactUs]=useState(initialValue);
   
   const onValueChange=(e)=>{
-      e.preventDefault();
-      setUser({...user,[e.target.name]:e.target.value});
-      console.log(user);
+      
+      setContactUs({...contactus,[e.target.name]:e.target.value});
+      console.log(contactus);
   }
-  const addUserDetails=async()=>{
-     await addUser(user);
+
+
+  const onSubmit = async(e)=>{
+    e.preventDefault();
+    try{
+        await addUser(contactus);
+        alert('Details Submitted Successfully');
+        setContactUs(initialValue); 
+    }catch(error){
+        console.log('Error adding user :' ,error);
+    }
+     
   }
 
 
@@ -36,17 +46,17 @@ const Contact = () => {
       <h1>Connecting With you</h1>
         <div className='main'>
             <div className='contactform'>
-            <form>
+            <form onSubmit={onSubmit}>
                 <h2>Request a Consultation</h2>
-                <input type="text" onChange={(e)=>onValueChange(e)} name='username' placeholder='Name' /><br/><br/>
+                <input type="text" onChange={onValueChange} name='contactuser'   value={contactus.contactuser} placeholder='Name' required/><br/><br/>
               
-                <input type="email" onChange={(e)=>onValueChange(e)} name='email' placeholder='Email'/><br/><br/>
+                <input type="email" onChange={onValueChange} name='useremail'  value={contactus.useremail} placeholder='Email' required/><br/><br/>
                
-                <input type="text" onChange={(e)=>onValueChange(e)} name='phone' placeholder='Phone Number'/><br/><br/>
+                <input type="tel" onChange={onValueChange} name='contact'   value={contactus.contact} placeholder='Phone Number' required/><br/><br/>
 
-                <textarea onChange={(e)=>onValueChange(e)} name='message' placeholder='Message'rows="4" cols="50"  maxlength="1000" ></textarea><br/><br/>
+                <textarea onChange={onValueChange} name='message'   value={contactus.message} placeholder='Message'rows="4" cols="50" required></textarea><br/><br/>
 
-                <Button variant="contained" onClick={addUserDetails}>Send</Button>
+                <Button variant="contained" type='submit'>Send</Button>
             </form>
             </div>
             <div className='contactinfo'>    
