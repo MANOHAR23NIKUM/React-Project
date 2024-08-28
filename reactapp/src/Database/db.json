@@ -12,6 +12,44 @@
           "title": "Image 1",
           "description": " This is image description "
         }
+      ],
+      "photos":[
+        {
+          "url": "https://data.si/en/wp-content/uploads/2019/07/company-size-slovenia.jpg",
+          "title": "img1",
+          "caption": "Data is the backbone of the digital world, driving decisions in nearly every industry. In the future, data will become even more crucial as AI and machine learning evolve. The volume of data generated globally is expected to grow exponentially, creating both challenges and opportunities. Future technologies will rely heavily on data for personalization, automation, and innovation. However, data security and privacy will become major concerns as more personal information is collected.",
+          "header": "Data and Future"
+        },
+        {
+          "url": "https://media.istockphoto.com/id/1181250359/photo/business-people.jpg?s=612x612&w=0&k=20&c=1DFEPJdcvlhFdQYp-hzj2CYXXRn-b6qYoPgyOptZsck=",
+          "title": "img1",
+          "caption": "Fostering a collaborative office culture where every voice is heard, and every contribution matters. We believe in teamwork, inclusivity, and empowering each individual to thrive and succeed together.In a world where data is often considered the new oil, investing in comprehensive data solutions is crucial for businesses looking to innovate and thrive in an increasingly data-driven economy.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information",
+          "header": "Office Culture"
+        },
+        {
+          "url": "https://cdn.create.vista.com/api/media/small/236003572/stock-photo-professional-young-multiethnic-business-team-discussing-work-office. ",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information.designed to handle massive datasets efficiently.These platforms allow businesses to store, manage, and analyze complex data",
+          "header": "Solutions driven strategies"
+        },
+        {
+          "url": "https://t3.ftcdn.net/jpg/05/24/37/16/360_F_524371662_i8JkwIuMQkwJLQJGgaU7dqQ8pVzqhErW.jpg",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Advanced analytics tools provide deeper insights through predictive and prescriptive analytics.These tools help organizations anticipate future trends.Consequently, businesses can make proactive decisions that align with their strategic goals.",
+          "header": "Solutions driven strategies"
+        },
+        {
+          "url": "https://t3.ftcdn.net/jpg/05/79/48/52/360_F_579485255_hzHox0stuQmBx5QViwnQqQjk7RD2AJza.jpg",
+          "title": "img1",
+          "caption": "culture where every voice is heard, and every contribution matters. We believe in teamwork, inclusivity, and empowering each individual to thrive and succeed together.In a world where data is often considered the new oil, investing in comprehensive data solutions is crucial for businesses looking to innovate and thrive in an increasingly data-driven economy.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information",
+          "header": "Office environment"
+        },
+        {
+          "url": "https://png.pngtree.com/thumb_back/fh260/png-vector/20200530/ourmid/pngtree-indoor-office-png-image_2215291.jpg",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information.designed to handle massive datasets efficiently.These platforms allow businesses to store, manage, and analyze complex data",
+          "header": "Workforce"
+        }
       ]
     },
     {

@@ -4,13 +4,13 @@ import { Container, Grid, Typography, Paper, Box } from '@mui/material';
 
 function About() {
   const [imageList, setImageList] = useState([]);
-  const URL_API = 'http://localhost:8080/users';
+  const URL_API = 'http://127.0.0.1:8080/users';
 
   const importFromJson = async () => {
     try {
       const response = await axios.get(URL_API);
-      console.log('image data', response.data[0].images);
-      setImageList(response.data[0].images);
+      console.log('image data', response.data[0].photos);
+      setImageList(response.data[0].photos);
     } catch (e) {
       console.error('Error fetching data:', e);
     }
@@ -22,7 +22,7 @@ function About() {
 
   return (
     <>
-
+    
     <Container maxWidth="lg" className="about-container" sx={{ mt: 8 }}>
       <Grid container spacing={3} alignItems="center">
         {imageList.map((img, index) => (
