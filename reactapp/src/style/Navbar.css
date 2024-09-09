@@ -1,7 +1,13 @@
-
 .logo img{
-    height: 40px;
-    width: 80px;
-    margin-right: 20px;
-
+    height: 50px;
+    width: 50px;
 }
+
+.dropdown{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    background-color: rgb(124, 124, 235);
+    border-radius: 5px;
+    font-weight: 900;
+}
+

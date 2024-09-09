@@ -1,97 +1,84 @@
 import React, { useState } from 'react'
 import '../style/Contact.css'
 import { Button, Link } from '@mui/material'
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import { addUser } from '../service/api';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import { addUser } from '../service/api';
+import Axios from 'axios';
 
 
-const initialValue = {
-contactuser:'',
-useremail:'',
-contact:'',
-message:''
-}
 
 const Contact = () => {
-   
-  const [contactus,setContactUs]=useState(initialValue);
-  
-  const onValueChange=(e)=>{
-      
-      setContactUs({...contactus,[e.target.name]:e.target.value});
-      console.log(contactus);
-  }
+  const url = "http://127.0.0.1:8080/contactus";
 
+  const initialState = {
+    contactuser: '',
+    useremail: '',
+    contact: '',
+    message: ''
+  };
 
-  const onSubmit = async(e)=>{
-    e.preventDefault();
-    try{
-        await addUser(contactus);
-        alert('Details Submitted Successfully');
-        setContactUs(initialValue); 
-    }catch(error){
-        console.log('Error adding user :' ,error);
-    }
+  const [data, setData] = useState(initialState);
+
+    function submit(e){
+      e.preventDefault();
+      Axios.post(url,{
+        contactuser:data.contactuser ,
+        useremail:data.useremail ,
+        contact:data.contact ,
+        message: data.message
+      })
+      .then(res =>{
+        console.log(res.data);
+        setData(initialState);
+      })
      
-  }
+    }
+
+    function handle(e){
+        const newdata={...data}
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata);
+    }
 
 
   return (
     <>
-      <h1>Connecting With you</h1>
+      <h1 style={{margin:'1%',textAlign:'center'}}>Connecting With you</h1>
         <div className='main'>
-            <div className='contactform'>
-            <form onSubmit={onSubmit}>
+        <div className='contactform'>
+            <form onSubmit={(e)=>submit(e)}>
                 <h2>Request a Consultation</h2>
-                <input type="text" onChange={onValueChange} name='contactuser'   value={contactus.contactuser} placeholder='Name' required/><br/><br/>
+                <input type="text" onChange={(e) => handle(e)} name='contactuser' id='contactuser'  value={data.contactuser} placeholder='Name' required/><br/><br/>
               
-                <input type="email" onChange={onValueChange} name='useremail'  value={contactus.useremail} placeholder='Email' required/><br/><br/>
+                <input type="email" onChange={(e) => handle(e)} name='useremail'id='useremail'  value={data.useremail} placeholder='Email' required/><br/><br/>
                
-                <input type="tel" onChange={onValueChange} name='contact'   value={contactus.contact} placeholder='Phone Number' required/><br/><br/>
+                <input type="tel" onChange={(e) => handle(e)} name='contact' id='contact'  value={data.contact} placeholder='Phone Number' required/><br/><br/>
 
-                <textarea onChange={onValueChange} name='message'   value={contactus.message} placeholder='Message'rows="4" cols="50" required></textarea><br/><br/>
+                <textarea onChange={(e) => handle(e)} name='message' id='message'  value={data.message} placeholder='Message'rows="4" cols="50" required></textarea><br/><br/>
 
                 <Button variant="contained" type='submit'>Send</Button>
             </form>
             </div>
-            <div className='contactinfo'>    
-                 <div>
-                  <h2>Get In Touch</h2>
-                   Phone:283493809
-                   Fax:82932098<br/>
-                   contacteducation@gmail.com
+            <div className='contactinfo'>  
+            <h2>Get In Touch</h2>  
+                 <div style={{margin:'10px 0'}}>  
+                <Link href="tel:+1234567890" sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                       <PhoneIcon sx={{color:'black'}}></PhoneIcon>
+                        <span style={{textDecoration:'none',color:'black',fontSize:'20px'}}>  +1234567890</span>
+                  </Link>
                  </div>
-                 <div>
-                      <h2>Hours</h2>
-                      <p>ChandanNagar Shivraj Chowk, Pune</p>
+                <div style={{margin:'10px 0'}}>
+                  <Link href="mailto:contacteducation@gmail.com" >
+                     <EmailIcon sx={{color:'rgb(48, 108, 143)'}}></EmailIcon> 
+                     <span style={{fontSize:'20px'}}>contacteducation@gmail.com</span>
+                  </Link>
                  </div>
-                 <div className='socialmediaicons'>
-                    <h3>Follow Us</h3>
-                    <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
-                         <WhatsAppIcon className='styleicon'   style={{ fontSize: 33 }} />
-                 </Link>
-                 <Link color="inherit" target="_blank" href="https:www.instagram.com/instagram/">
-                         <InstagramIcon  className='styleicon' style={{ fontSize: 33 }} ></InstagramIcon>
-                 </Link>
-                 <Link color="inherit" target="_blank" href="https:www.facebook.com/<username>">
-                     <FacebookIcon  className='styleicon' style={{ fontSize: 33 }} ></FacebookIcon>
-                 </Link>
-                 <Link color="inherit" target="_blank" href="https:twitter.com/<username>">
-                     <TwitterIcon  className='styleicon' style={{ fontSize: 33 }} ></TwitterIcon>
-                 </Link>
-                        
-                <Link color="inherit" target="_blank" href="https://www.pinterest.com/<username>/">
-                    <PinterestIcon  className='styleicon' style={{ fontSize: 33 }} ></PinterestIcon>
-                </Link>
-
-                <Link color="inherit" target="_blank" href="https://www.youtube.com">
-                    <YouTubeIcon className='styleicon' style={{ fontSize: 33 }} ></YouTubeIcon>
-                </Link>
+                 <div style={{margin:'10px 0'}}>
+                      <h2>Address</h2>
+                      <LocationOnIcon></LocationOnIcon><span style={{fontSize:'20px'}}>ChandanNagar Shivraj Chowk, Pune</span>
                  </div>
             </div>
         </div>

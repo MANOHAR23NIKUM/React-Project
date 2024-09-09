@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../style/Navbar.css'
 import { styled } from '@mui/material';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const StyledNavLink = styled(Nav.Link)`
   color: white;
@@ -13,9 +14,7 @@ const StyledNavLink = styled(Nav.Link)`
   font-family: "EB Garamond", serif;
 
   &:hover {
-    color: red;
-    background:rgb(241, 240, 239);
-    border-radius:5px;
+    color: blue;
   }
 `;
 
@@ -28,7 +27,7 @@ const StyledNavbarCollapse = styled(Navbar.Collapse)`
   }
   
   .nav-link:hover {
-    color: red; /* Color on hover */
+    color: blue; /* Color on hover */
   }
 `;
 
@@ -37,20 +36,23 @@ function CollapsibleExample() {
     <Navbar collapseOnSelect expand="lg" className="navbar" style={{background:'rgb(46, 45, 45)'}}>
       <Container>
         <Navbar.Brand href="/home" className='logo'>
-              <img src='http://hematitecorp.com/assets/images/logo.png' alt='Logoimg'/>
+              <img src='https://a2zithub.org/assets/165710745335077275.png' alt='Logoimg'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ backgroundColor:'white' ,color:'white'}} />
         <StyledNavbarCollapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{fontSize:'20',fontWeight:'500'}}>
             <StyledNavLink href="/">Home</StyledNavLink>
             <StyledNavLink href="/about">About</StyledNavLink>
+            <StyledNavLink href="/services">Service</StyledNavLink>
             <StyledNavLink href="/contact">Contact</StyledNavLink>
-            <StyledNavLink href="/service">Service</StyledNavLink>
             <StyledNavLink href="/all">AllUser</StyledNavLink>
           </Nav>
           <Nav style={{fontSize:'20',fontWeight:'500'}}>
-          <StyledNavLink href="/signin">SignIn</StyledNavLink>
-            <StyledNavLink eventKey={2} href="/signUp">SignUp</StyledNavLink>
+            <NavDropdown title="Sign In" id="navbarScrollingDropdown" className='dropdown'>
+              <NavDropdown.Item href="/admin">Admin Login</NavDropdown.Item>
+              <NavDropdown.Item href="/user">User Login</NavDropdown.Item>
+            </NavDropdown>
+            <StyledNavLink href="/signUp" id='dropdown' style={{background:'rgb(124, 124, 235)',marginLeft:'5px',borderRadius:'5px',color:'White',fontWeight:'600'}}>SignUp</StyledNavLink>
           </Nav>
         </StyledNavbarCollapse>
       </Container>

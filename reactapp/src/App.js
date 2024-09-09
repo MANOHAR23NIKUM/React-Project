@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
@@ -8,7 +9,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import EditUser from './components/EditUser';
 import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
+          <Route path='/services' element={<Services/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>

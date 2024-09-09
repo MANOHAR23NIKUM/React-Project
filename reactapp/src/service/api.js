@@ -50,3 +50,6 @@ export const deleteUser=async(id)=>{
         console.log('error while deleting user ',error.message);
     }   
 }
+
+
+
