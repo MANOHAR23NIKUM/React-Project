@@ -11,6 +11,7 @@ import EditUser from './components/EditUser';
 import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 import Services from './components/Services';
+import ServiceDetails from './components/ServiceDetails';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/add" element={<SignUp/>} />
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>
+          <Route path="/service-details/:id" element={<ServiceDetails/>}/>
       </Routes> 
     </BrowserRouter>
     <Footer/>
