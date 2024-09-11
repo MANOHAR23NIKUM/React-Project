@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
   const cardImages = Database.Cardsimg.flatMap(card => card.images || []);
+  console.log(cardImages);
+  
 
   return (
     <Container style={{ textAlign: 'center' }} maxWidth="lg">
@@ -25,10 +27,10 @@ const Services = () => {
               border: '2px solid transparent',
             }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.border = '2px solid red'; // Red border on hover
+                e.currentTarget.style.boxShadow='0px 0px 4px black'; // black boxshodow on hover
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.border = '2px solid transparent'; // Remove border on mouse leave
+                e.currentTarget.style.boxShadow='0px 0px 1px black'; // Remove boxshadow on mouse leave
               }}>
 
               <CardActionArea>
@@ -43,17 +45,20 @@ const Services = () => {
                   <Typography gutterBottom variant="h5" component="div">
                     {card.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography className='service-descrip' variant="body2" color="text.secondary">
                     {card.description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
                 <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                 
+
+                <Link to={`/service-details/${card?.id}`}>
+                
                     <Button variant="contained" size="medium" style={{ borderRadius: '0 10px 0 10px' }}>
-                      EXPLORE
+                      Read more
                     </Button>
+                </Link>
                 
                 </Box>
               </CardActions>

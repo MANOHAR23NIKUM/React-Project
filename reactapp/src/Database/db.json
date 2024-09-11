@@ -59,37 +59,42 @@
     {
       "images": [
         {
+          "id": "1",
           "url": "images/css3.jpg",
           "title": "CSS3",
-          "description": " This is image description "
+          "description": "Cascading Style Sheets Level 3 (CSS3) is a styling language that's used to make web pages more attractive and user-friendly. It's the latest version of CSS and the successor to CSS2."
         },
         {
+          "id": "2",
           "url": "images/HTML5.jpg",
           "title": "HTML5",
-          "description": " This is image description "
+          "description": "HTML5 (Hypertext Markup Language 5) is a markup language used for structuring and presenting hypertext documents on the World Wide Web."
         },
         {
+          "id": "3",
           "url": "images/java.jpg",
           "title": "Java",
-          "description": " This is image description "
+          "description": "Java is a popular, object-oriented programming language that's used for a variety of applications"
         },
         {
+          "id": "4",
           "url": "images/react.jpg",
           "title": "React",
-          "description": " This is image description "
+          "description": "ReactJS, commonly known as React, is a JavaScript library used for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, making the development process more efficient."
         },
         {
+          "id": "5",
           "url": "images/python.jpg",
-          "title": "python",
-          "description": " This is image description "
+          "title": "Python",
+          "description": "Python is a versatile, high-level programming language known for its readability and simplicity. It’s widely used in various fields, including web development, data analysis, artificial intelligence, scientific computing, and more."
         },
         {
+          "id": "6",
           "url": "images/python1.jpg",
           "title": "Bootstrap",
-          "description": " This is image description "
+          "description": "Bootstrap is a popular, open-source front-end framework used for building responsive and mobile-first websites. It includes a collection of CSS and JavaScript tools for creating common UI components like forms, buttons, navigation bars, and more."
         }
-      ],
-      "id": "c251"
+      ]
     }
   ]
 }
