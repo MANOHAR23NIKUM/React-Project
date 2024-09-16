@@ -62,37 +62,248 @@
           "id": "1",
           "url": "images/css3.jpg",
           "title": "CSS3",
-          "description": "Cascading Style Sheets Level 3 (CSS3) is a styling language that's used to make web pages more attractive and user-friendly. It's the latest version of CSS and the successor to CSS2."
+          
+          "description1": "Cascading Style Sheets Level 3 (CSS3) is a styling language that's used to make web pages more attractive and user-friendly. It's the latest version of CSS and the successor to CSS2.",
+          "description2": "CSS3 (Cascading Style Sheets Level 3) is the latest version of the CSS standard used to style web pages. It introduces new features that enhance design flexibility and interactivity, such as:",
+          
+          "syllabus":[
+            {
+              "title":"CSS 3",
+              
+            "contents":[
+            
+            {
+              "title": "Selectors",
+              "description": "More powerful ways to target HTML elements."
+            },
+            {
+              "title": "Flexbox and Grid",
+              "description": "Layout models for responsive, flexible designs."
+            },
+            {
+              "title": "Transitions & Animations",
+              "description": "For smooth, dynamic effects."
+            },
+            {
+              "title": "Transforms",
+              "description": "2D/3D rotation, scaling, and more."
+            }
+          ]
+        }
+      ],
+          "description3": "CSS3 makes web development more powerful and user-friendly."  
         },
+
         {
           "id": "2",
           "url": "images/HTML5.jpg",
           "title": "HTML5",
-          "description": "HTML5 (Hypertext Markup Language 5) is a markup language used for structuring and presenting hypertext documents on the World Wide Web."
+
+          "description1": "HTML5 (Hypertext Markup Language 5) is a markup language used for structuring and presenting hypertext documents on the World Wide Web.",
+          "description2": "HTML5 is the latest version of the HyperText Markup Language (HTML), used to structure content on the web. It introduced significant improvements and new features, including:",
+
+          "syllabus":[
+            {
+              "title":"HTML 5",
+
+          "contents":[
+            {
+              "title": "New Semantic Elements",
+              "description": "Tags like <article>, <section>, <header>, and <footer> improve document structure and readability."
+            },
+            {
+              "title": "Multimedia Support",
+              "description": "Native support for audio (<audio>) and video (<video>) elements without the need for external plugins."
+            },
+            {
+              "title": "Geolocation API",
+              "description": "Allows websites to access the user's geographic location."
+            },
+            {
+              "title": "Form Enhancements",
+              "description": "New input types (date, email, range, etc.) and form attributes make handling user input easier."
+            },
+            {
+              "title": "WebSockets",
+              "description": "Enable real-time communication between the browser and server."
+            }
+          ]
+        }
+      ],
+
+          "description3": "HTML5 enhances web application capabilities, enabling richer, more dynamic experiences across devices." 
         },
+
         {
           "id": "3",
-          "url": "images/java.jpg",
-          "title": "Java",
-          "description": "Java is a popular, object-oriented programming language that's used for a variety of applications"
+          "url": "images/Bootstrap.jpg",
+          "title": "Bootstrap",
+
+          "description1": "Bootstrap is a popular, open-source front-end framework used for building responsive and mobile-first websites. It includes a collection of CSS and JavaScript tools for creating common UI components like forms, buttons, navigation bars, and more.",
+          "description2": "Bootstrap is a popular open-source front-end framework used for developing responsive and mobile-first websites. It provides pre-designed HTML, CSS, and JavaScript components, making it easier to create modern web layouts quickly.",
+
+          "syllabus":[
+            {
+              "title":"Bootstrap",
+
+          "contents":[
+            {
+              "title": "Responsive Grid System",
+              "description": " A flexible 12-column grid system that adjusts layout based on screen size, ensuring compatibility across devices."
+            },
+            {
+              "title": "Pre-built Components",
+              "description": "Includes ready-to-use components like navigation bars, buttons, forms, modals, cards, and more."
+            },
+            {
+              "title": "Cross-browser Compatibility",
+              "description": "Ensures consistent performance across major browsers."
+            },
+            {
+              "title": "Customizable",
+              "description": "Easily customizable via variables and mixins, allowing developers to adapt the design to specific needs."
+            },
+            {
+              "title": "Cross-browser Compatibility",
+              "description": "Ensures consistent performance across major browsers."
+            },
+            {
+              "title": "JavaScript Plugins",
+              "description": "Includes interactive components like carousels, tooltips, and dropdowns powered by JavaScript/jQuery."
+            }
+          ]
+        }
+      ],
+
+          "description3": "Bootstrap simplifies web development by providing a consistent design framework and responsive features, making it a favorite among developers." 
         },
+
         {
           "id": "4",
           "url": "images/react.jpg",
           "title": "React",
-          "description": "ReactJS, commonly known as React, is a JavaScript library used for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, making the development process more efficient."
+
+          "description1": "ReactJS, commonly known as React, is a JavaScript library used for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, making the development process more efficient.",
+          "description2": "React is an open-source JavaScript library used for building user interfaces, primarily for single-page applications. Developed by Facebook, it focuses on creating fast, scalable, and dynamic web applications by efficiently updating and rendering components and Key Features of React:",
+
+          "syllabus":[
+            {
+              "title":"React",
+
+          "contents":[
+            {
+              "title": "Component-Based Architecture",
+              "description": "UI is divided into reusable, self-contained components, simplifying development and maintenance."
+            },
+            {
+              "title": "JSX (JavaScript XML)",
+              "description": "A syntax extension that allows mixing HTML-like code with JavaScript, making code easier to write and understand."
+            },
+            {
+              "title": "One-Way Data Binding",
+              "description": "Data flows in one direction (from parent to child components), which makes code more predictable and easier to debug."
+            },
+            {
+              "title": "State Management",
+              "description": "React handles dynamic changes in application data using 'state' and 'props' to manage data flow and UI updates."
+            },
+            {
+              "title": "Ecosystem",
+              "description": "Integrates well with other tools, such as Redux for state management, and can be extended with libraries for routing and API handling."
+            },
+            {
+              "title": "Virtual DOM",
+              "description": "React uses a virtual representation of the DOM to update only the parts of the page that change, improving performance."
+            }
+          ]
+        }
+      ],
+
+          "description3": "React is widely used for building interactive, fast, and scalable web applications, making it one of the most popular JavaScript libraries today." 
         },
+
         {
           "id": "5",
           "url": "images/python.jpg",
           "title": "Python",
-          "description": "Python is a versatile, high-level programming language known for its readability and simplicity. It’s widely used in various fields, including web development, data analysis, artificial intelligence, scientific computing, and more."
+
+          "description1": "Python is a versatile, high-level programming language known for its readability and simplicity. It’s widely used in various fields, including web development, data analysis, artificial intelligence, scientific computing, and more.",
+          "description2": "Python is a high-level, general-purpose programming language known for its simplicity, readability, and versatility. Created by Guido van Rossum in 1991, it is widely used in various fields, from web development to data science and machine learning.",
+
+          "syllabus":[
+            {
+              "title":"Python",
+
+          "contents":[
+            {
+              "title": "Easy Syntax",
+              "description": "Python's syntax is clear and concise, making it easy to learn and use, especially for beginners."
+            },
+            {
+              "title": "Extensive Standard Library",
+              "description": "It comes with a comprehensive standard library for tasks like file handling, regular expressions, and data manipulation."
+            },
+            {
+              "title": "Object-Oriented and Functional",
+              "description": "Supports both object-oriented programming and functional programming paradigms."
+            },
+            {
+              "title": "Cross-Platform",
+              "description": "Python runs on multiple platforms, including Windows, macOS, and Linux."
+            },
+            {
+              "title": "Large Ecosystem",
+              "description": "Python has a vast ecosystem of third-party libraries and frameworks for web development (Django, Flask), data analysis (Pandas, NumPy), and machine learning (TensorFlow, Scikit-learn)."
+            }
+          ]
+        }
+      ],
+
+          "description3": "Python is popular for web development, automation, artificial intelligence, data science, and more, making it one of the most widely used programming languages globally." 
         },
+
         {
           "id": "6",
-          "url": "images/python1.jpg",
-          "title": "Bootstrap",
-          "description": "Bootstrap is a popular, open-source front-end framework used for building responsive and mobile-first websites. It includes a collection of CSS and JavaScript tools for creating common UI components like forms, buttons, navigation bars, and more."
+          "url": "images/java.jpg",
+          "title": "Java",
+
+          "description1": "Java is a popular, object-oriented programming language that's used for a variety of applications",
+          "description2": "Java is a versatile, high-level, object-oriented programming language developed by Sun Microsystems (now Oracle) in 1995. It is designed to have a 'write once, run anywhere' philosophy, meaning Java code can run on any device with a Java Virtual Machine (JVM).",
+
+          "syllabus":[
+            {
+              "title":"Java",
+
+          "contents":[
+            {
+              "title": "Platform Independence",
+              "description": "Java code is compiled into bytecode, which can be executed on any device that has a JVM, making it platform-independent."
+            },
+            {
+              "title": "Object-Oriented",
+              "description": "Follows the object-oriented programming (OOP) paradigm, supporting concepts like inheritance, encapsulation, and polymorphism."
+            },
+            {
+              "title": "Robust and Secure",
+              "description": "Java provides strong memory management, exception handling, and security features, making it reliable for large applications."
+            },
+            {
+              "title": "Multithreading",
+              "description": "Java natively supports multithreading, allowing concurrent execution of two or more parts of a program to optimize performance."
+            },
+            {
+              "title": "Rich API",
+              "description": "Java has an extensive library of APIs for networking, data structures, graphical user interfaces (GUI), input/output, and more."
+            },
+            {
+              "title": "Automatic Memory Management (Garbage Collection)",
+              "description": "Java automatically manages memory allocation and deallocation, reducing memory leaks and programmer errors."
+            }
+          ]
+        }
+      ],
+
+          "description3": "Java is popular in web development, mobile applications (Android), enterprise software, and embedded systems, known for its stability, scalability, and cross-platform capabilities." 
         }
       ]
     }

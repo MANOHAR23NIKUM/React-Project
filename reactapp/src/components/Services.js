@@ -46,7 +46,7 @@ const Services = () => {
                     {card.title}
                   </Typography>
                   <Typography className='service-descrip' variant="body2" color="text.secondary">
-                    {card.description}
+                    {card.description1}
                   </Typography>
                 </CardContent>
               </CardActionArea>

@@ -8,9 +8,11 @@
 }
 
 .service-title{
-    font-weight: bold;  
+    font-weight: bold;
+    font-size: larger;  
     text-align: center;
     text-transform: capitalize;
+    padding: 10px;
 }
 
 .service-descrip{
@@ -23,12 +25,22 @@
         text-align: justify;
 }
 
-.service-description{
-    font-weight: bold;
+.service-description1{
+    /* font-weight: bold; */
     margin-left: 5opx;
 }
+
 .service-body{
     margin-top: 20px;
-
 }
+
+.content-title{
+    font-weight: bold;
+}
+
+.content-li{
+    margin-left: 50px;
+    text-align: justify;
+}
+
       
