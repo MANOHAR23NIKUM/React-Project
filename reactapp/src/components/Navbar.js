@@ -31,12 +31,12 @@ const Navbar = () => {
                     
                   </div>
                 <div className='righttab1'>
-                    <Tabs>Sign In</Tabs>
+                    <Tabs>Login</Tabs>
                 </div>
-                  <div className='righttab'>
+                  {/* <div className='righttab'> */}
                     {/* <Tabs>Sign Up</Tabs> */}
-                    <Tabs to="/add">SignUp</Tabs>
-                </div>   
+                    {/* <Tabs to="/add">SignUp</Tabs>
+                </div>    */}
             </Toolbar>        
         </AppBar>
       </div>
@@ -46,3 +46,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+  

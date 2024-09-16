@@ -2,16 +2,7 @@ import React from "react";
 import Database from "../Database/db.json";
 import Carousel from "react-material-ui-carousel";
 import '../style/Home.css'
-import {
-  Grid,
-  Card,
-  CardContent,
-  Typography,
-  Paper,
-  Button,
-  CardActions,
-  Box,
-} from "@mui/material";
+import {Grid,Card,CardContent,Typography,Paper,Button,CardActions,Box,} from "@mui/material";
 import Container from "@mui/material/Container";
 import { CardActionArea } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
@@ -22,7 +13,7 @@ const Home = () => {
   const aboutUsImage = Database.AboutUS[0].url;
 
   const cardImages = Database.Cardsimg.flatMap(
-    (card) => card.images.slice(0, 3) || []
+    (card) => card.images.slice(3, 6) || []
   );
   const cardsBackgroundImage = Database.BackgroundImages?.[0]?.cardsSection;
 
@@ -112,7 +103,7 @@ const Home = () => {
       >
         <Container style={{ textAlign: "center" }} maxWidth="lg">
           <Typography variant="h4" align="center" style={{ marginTop: "50px" }}>
-            Over services
+            Our Services
           </Typography>
 
           <Grid container spacing={5} style={{ marginTop: "20px" }}>
@@ -142,18 +133,18 @@ const Home = () => {
                       height="140"
                       image={card.url}
                       alt={card.title}
-                      style={{ borderRadius: "5px" }}
+                      style={{ borderRadius: "5px"  }}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
                         {card.title}
                       </Typography>
-                      <Typography className="home-descrip" variant="body2" color="text.secondary">
+                      {/* <Typography className="home-descrip" variant="body2" color="text.secondary">
                         {card.description}
+                      </Typography> */}
                         {/* Lizards are a widespread group of squamate reptiles,
                         with over 6,000 species, ranging across all continents
                         except Antarctica */}
-                      </Typography>
                     </CardContent>
                   </CardActionArea>
                   <CardActions>
@@ -165,13 +156,13 @@ const Home = () => {
                       }}
                     >
                       <Link to={`/service-details/${card?.id}`}>
-                        <Button
+                        {/* <Button
                           variant="contained"
                           size="medium"
                           style={{ borderRadius: "0 10px 0 10px" }}
                         >
                           Read more
-                        </Button>
+                        </Button> */}
                       </Link>
                     </Box>
                   </CardActions>
