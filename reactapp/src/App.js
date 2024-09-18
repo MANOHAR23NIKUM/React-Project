@@ -10,6 +10,8 @@ import Navbar from './components/Navbar';
 import EditUser from './components/EditUser';
 import Footer from './components/Footer';
 import Services from './components/Services';
+import AddUser from './components/AddUser';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>
+          <Route path='/user' element={<AddUser/>}/>
+          <Route path='/signup' element={<SignUp/>}/>
+
+
       </Routes> 
     </BrowserRouter>
     <Footer/>

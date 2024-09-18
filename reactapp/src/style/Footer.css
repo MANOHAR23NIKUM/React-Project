@@ -15,3 +15,34 @@
 .pageslink:hover{
    color: aqua;
 }
+.footerabout{
+    text-align: justify;
+} 
+.footer-copyright {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #ffffff;
+
+}
+
+.copyright-body {
+   padding: 10px;
+   background-color: #218bbb;
+}
+
+@media ((min-width: 320px) and (max-width: 425px)) {
+
+   .footer-copyright {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       color: #ffffff;
+       font-size: 12px;
+       text-align: center;
+   }
+
+   .footer-content {
+       font-size: 14px;
+   }
+}

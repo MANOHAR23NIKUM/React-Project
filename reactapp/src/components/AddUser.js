@@ -85,7 +85,7 @@ const addUserDetails=async()=>{
 
 return (
     <div>
-        <Container>
+        <Container sx={{marginBottom:'30px'}}>
 
         <Typography variant='h4'>Add User</Typography>
             <FormControl>

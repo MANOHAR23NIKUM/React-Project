@@ -14,21 +14,26 @@ const StyledNavLink = styled(Nav.Link)`
   font-family: "EB Garamond", serif;
 
   &:hover {
-    color: blue;
+    color:orange;
   }
+ 
+
 `;
 
 const StyledNavbarCollapse = styled(Navbar.Collapse)`
   background-color: rgb(46, 45, 45); /* Background color */
   color: white; /* Text color */
+
   
   .nav-link {
     color: white; /* Default text color for nav links */
   }
-  
+
   .nav-link:hover {
-    color: blue; /* Color on hover */
+    color: orange; /* Color on hover */
   }
+  
+  
 `;
 
 function CollapsibleExample() {
@@ -52,7 +57,7 @@ function CollapsibleExample() {
               <NavDropdown.Item href="/admin">Admin Login</NavDropdown.Item>
               <NavDropdown.Item href="/user">User Login</NavDropdown.Item>
             </NavDropdown>
-            <StyledNavLink href="/signUp" id='dropdown' style={{background:'rgb(124, 124, 235)',marginLeft:'5px',borderRadius:'5px',color:'White',fontWeight:'600'}}>SignUp</StyledNavLink>
+            <StyledNavLink href="/signUp" id='dropdown'className='dropdown1' sx={{fontWeight:'900'}} >SignUp</StyledNavLink>
           </Nav>
         </StyledNavbarCollapse>
       </Container>

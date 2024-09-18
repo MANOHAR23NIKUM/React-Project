@@ -14,7 +14,7 @@ const Muigridfooter = () => {
       <div style={{backgroundColor:'rgb(66, 65, 65)', color:'white'}}>
         <Container>
         <Grid container spcing={3}>
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} sm={6} md={6} lg={3} >
             <Typography variant="h4" sx={{ margin: "15px"  }} className="logoimg">
                 <img src='https://a2zithub.org/assets/165710745335077275.png' alt="Logoimg" />
             </Typography>
@@ -24,49 +24,69 @@ const Muigridfooter = () => {
             </Typography>
           
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3} >
+          <Grid item xs={12} sm={6} md={6} lg={3} >
             <Typography variant="h4" sx={{ margin: "15px"  }} >
                   Pages
             </Typography>
             <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
               {" "} 
-              <Link color="inherit" href="/home">
+              <Link color="inherit" href="/" sx={{ textDecoration: 'none' }}>
                     Home
               </Link>
             </Typography>
             <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
               {" "} 
-              <Link color="inherit" href="/about">
+              <Link color="inherit" href="/about" sx={{ textDecoration: 'none' }}>
                     About
               </Link>
             </Typography>
             <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
               {" "} 
-              <Link color="inherit" href="/service">
+              <Link color="inherit" href="/service" sx={{ textDecoration: 'none' }}>
                     Services
               </Link>
             </Typography>
             <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
               {" "} 
-              <Link color="inherit" href="/contact">
+              <Link color="inherit" href="/contact" sx={{ textDecoration: 'none' }}>
                     Contact
               </Link>
             </Typography>
           
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Typography variant="" sx={{   margin: "15px" }}>
-               <p style={{textAlign:'justify'}}>
-               Our motto is to create sustainable and self supportive communities. We facilitate people to 
-                 identify their community issues and act upon to resolve       those issues. We raise the consciousness 
-                 level of the people and establish community based organization. The formation of these community 
-                based organizations help communities to come up with solutions for the identified issues.
+          <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Typography variant="h4" sx={{ margin:"15px"  }}>
+              Courses
+            </Typography>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+              JAVA  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+                PYTHON  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+               PHP  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+              MERN Stack
+            </Typography>
+
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} lg={3}>
+          <Typography variant="h4" sx={{ margin:"15px 5px" }}>
+              About
+            </Typography>
+            <Typography variant="" className="footerabout">
+               <p>
+               Our company has been providing exceptional services for over a decade. We specialize in offering 
+               top-notch solutions to meet the diverse needs of our clients. Our team of experts is dedicated to 
+               delivering innovative and effective strategies to help businesses thrive.
                </p>
             </Typography>
           </Grid>
         </Grid>
-         <Grid item xs={12} sm={6} md={4} lg={3} sx={{ textAlign:'center'}} >
-            <Typography variant="h4" >
+         <Grid item xs={12} sm={6} md={4} lg={3} sx={{ textAlign:'center', padding:'5px'}} >
+            <Typography variant="h4">
                Get In Touch
             </Typography>
             <Typography  sx={{ margin:'15px',textAlign:'center' }}>
@@ -96,9 +116,20 @@ const Muigridfooter = () => {
           
           </Grid>
         </Container>
+        <div class="copyright-body">
+          <div class="container">
+            <div class="footer-copyright">
+              <span>© 2024 Hematite Infotech, All Rights Reserved.</span>
+              <span>Web Design &amp; Development by Hematite Infotech Pvt. Ltd.</span>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
 };
 
 export default Muigridfooter;
+
+
+
