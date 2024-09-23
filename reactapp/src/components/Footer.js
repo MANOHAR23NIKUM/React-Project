@@ -1,97 +1,135 @@
-import React from 'react'
-import '../style/Footer.css'
+import { Container, Grid, Link, Typography } from "@mui/material";
+import React from "react";
+import '../style/Footer.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { IconButton, Link} from '@mui/material';
 
-const Footer = () => {
+const Muigridfooter = () => {
   return (
     <>
-        <div className='footer'>
-             <h1>Educational Website</h1>
-             <p>Our motto is to create sustainable and self supportive communities. We facilitate people to 
-                identify their community issues and act upon to resolve those issues. We raise the consciousness 
-                level of the people and establish community based organization. The formation of these community 
-                based organizations help communities to come up with solutions for the identified issues.</p>
-             <h1>Get In Touch</h1>
-             <div className='icons'>
-                {/* <Link to="htttps://wa.me/+919763858978">
-                    <IconButton>
-                        <WhatsAppIcon  className='styleicon'></WhatsAppIcon>
-                    </IconButton>     
-                </Link> */}
-                <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
-                        <WhatsAppIcon className='styleicon' />
+      <div style={{backgroundColor:'rgb(66, 65, 65)', color:'white'}}>
+        <Container>
+        <Grid container spcing={3}>
+          <Grid item xs={12} sm={6} md={6} lg={3} >
+            <Typography variant="h4" sx={{ margin: "15px"  }} className="logoimg">
+                <img src='https://a2zithub.org/assets/165710745335077275.png' alt="Logoimg" />
+            </Typography>
+            <Typography variant="h5" sx={{ margin: "15px"}}>
+              {" "} 
+              Educational Website
+            </Typography>
+          
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} lg={3} >
+            <Typography variant="h4" sx={{ margin: "15px"  }} >
+                  Pages
+            </Typography>
+            <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
+              {" "} 
+              <Link color="inherit" href="/" sx={{ textDecoration: 'none' }}>
+                    Home
+              </Link>
+            </Typography>
+            <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
+              {" "} 
+              <Link color="inherit" href="/about" sx={{ textDecoration: 'none' }}>
+                    About
+              </Link>
+            </Typography>
+            <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
+              {" "} 
+              <Link color="inherit" href="/service" sx={{ textDecoration: 'none' }}>
+                    Services
+              </Link>
+            </Typography>
+            <Typography variant="h6" sx={{fontSize:'17px', margin: "15px"}} className="pageslink">
+              {" "} 
+              <Link color="inherit" href="/contact" sx={{ textDecoration: 'none' }}>
+                    Contact
+              </Link>
+            </Typography>
+          
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Typography variant="h4" sx={{ margin:"15px"  }}>
+              Courses
+            </Typography>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+              JAVA  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+                PYTHON  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+               PHP  Developer
+            </Typography><br/><br/>
+            <Typography variant="" sx={{ fontSize:'17px' , margin: "15px"  }}>
+              MERN Stack
+            </Typography>
+
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} lg={3}>
+          <Typography variant="h4" sx={{ margin:"15px 5px" }}>
+              About
+            </Typography>
+            <Typography variant="" className="footerabout">
+               <p>
+               Our company has been providing exceptional services for over a decade. We specialize in offering 
+               top-notch solutions to meet the diverse needs of our clients. Our team of experts is dedicated to 
+               delivering innovative and effective strategies to help businesses thrive.
+               </p>
+            </Typography>
+          </Grid>
+        </Grid>
+         <Grid item xs={12} sm={6} md={4} lg={3} sx={{ textAlign:'center', padding:'5px'}} >
+            <Typography variant="h4">
+               Get In Touch
+            </Typography>
+            <Typography  sx={{ margin:'15px',textAlign:'center' }}>
+              {" "}
+                 <Link color="inherit" target="_blank" href="https://wa.me/+919763858978">
+                         <WhatsAppIcon className='styleicon' fontSize="large" sx={{color:'white', backgroundColor:'green',borderRadius:'50%',padding:'4px'}} />
                  </Link>
-
-                {/* <WhatsAppIcon className='styleicon' /> */}
-                <Link color="inherit" target="_blank" href="https://www.instagram.com/instagram/">
-                        <InstagramIcon  className='styleicon'></InstagramIcon>
-                </Link>
-
-                  <Link color="inherit" target="_blank" href="https://www.facebook.com/<username>">
-                    <FacebookIcon  className='styleicon'></FacebookIcon>
-                </Link>
-
-                <Link color="inherit" target="_blank" href="https://twitter.com/<username>">
-                    <TwitterIcon  className='styleicon'></TwitterIcon>
-                </Link>
-
+                 <Link color="inherit" target="_blank" href="https:www.instagram.com/instagram/">
+                         <InstagramIcon  className='styleicon' fontSize="large" sx={{borderRadius:'50%',padding:'4px', background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)'}}></InstagramIcon>
+                 </Link>
+                 <Link color="inherit" target="_blank" href="https:www.facebook.com/<username>">
+                     <FacebookIcon  className='styleicon' fontSize="large" sx={{color:'white',background:'rgb(32, 32, 131)',padding:'6px',borderRadius:'50%'}}></FacebookIcon>
+                 </Link>
+                 <Link color="inherit" target="_blank" href="https:twitter.com/<username>">
+                     <TwitterIcon  className='styleicon' fontSize="large" sx={{color:'white',background:' rgb(63, 223, 215)',borderRadius:'50%',padding:'5px'}}></TwitterIcon>
+                 </Link>
+                        
                 <Link color="inherit" target="_blank" href="https://www.pinterest.com/<username>/">
-                    <PinterestIcon  className='styleicon'></PinterestIcon>
+                    <PinterestIcon  className='styleicon' fontSize="large" sx={{color:'white' ,background:'orangered', padding:'4px',borderRadius:'5px'}}></PinterestIcon>
                 </Link>
 
                 <Link color="inherit" target="_blank" href="https://www.youtube.com">
-                    <YouTubeIcon className='styleicon'></YouTubeIcon>
+                    <YouTubeIcon className='styleicon' fontSize="large" sx={{color:'white' ,background:'red',padding:'4px',borderRadius:'5px'}}></YouTubeIcon>
                 </Link>
-
-                {/* <a href="https://wa.me/+919763858978" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                    <IconButton>
-                        <WhatsAppIcon className='styleicon' />
-                    </IconButton>
-                </a> 
-
-                <a href="https://www.instagram.com/instagram/" target='_blank' rel="noopener noreferrer">
-                    <IconButton>
-                        <InstagramIcon  className='styleicon'></InstagramIcon>
-                    </IconButton>
-                </a>
-
-                <a href="https://www.facebook.com/<username>" target='_blank' rel="noopener noreferrer">
-                    <IconButton>
-                        <FacebookIcon  className='styleicon'></FacebookIcon>
-                    </IconButton>
-                </a>
-
-                <a href="https://twitter.com/<username>" target='_blank' rel="noopener noreferrer">
-                    <IconButton> 
-                        <TwitterIcon  className='styleicon'></TwitterIcon>
-                    </IconButton>
-                </a> 
-
-                <a href="https://www.pinterest.com/<username>/" target='_blank' rel="noopener noreferrer">
-                    <IconButton>
-                        <PinterestIcon  className='styleicon'></PinterestIcon>
-                    </IconButton> 
-                </a> 
-
-                <a href="https://www.youtube.com" target='_blank' rel="noopener noreferrer">
-                    <IconButton>
-                        <YouTubeIcon className='styleicon'></YouTubeIcon>
-                    </IconButton>
-                </a>      */}
-             </div>
-             
+                
+            </Typography>
+          
+          </Grid>
+        </Container>
+        <div class="copyright-body">
+          <div class="container">
+            <div class="footer-copyright">
+              <span>© 2024 Hematite Infotech, All Rights Reserved.</span>
+              <span>Web Design &amp; Development by Hematite Infotech Pvt. Ltd.</span>
+            </div>
+          </div>
         </div>
-        <div className='copyrightcont'>
-                <p>Copyright © 2024 </p>
-        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Muigridfooter;
+
+
+

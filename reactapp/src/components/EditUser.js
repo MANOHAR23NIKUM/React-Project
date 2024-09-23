@@ -83,7 +83,7 @@ const EditUser = () => {
   return (
     <>
       <div> 
-          <Container>
+          <Container sx={{marginBottom:'20px'}}>
             <Typography variant='h4'>Edit User</Typography>
             <FormControl>
                 <InputLabel>Name</InputLabel>

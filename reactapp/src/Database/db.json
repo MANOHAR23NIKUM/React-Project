@@ -1,46 +1,147 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "manohar",
-      "email": "nikum@gmail.com",
-      "city": "ndb",
-      "phone": "3234456745",
+      "id": "f34c",
+      "username": "Vaishnavi",
+      "password": "Vaishu#123",
+      "email": "vaishnavi@gmail.com",
+      "city": "Pune",
+      "phone": "9090909090",
       "images": [
         {
           "url": "images/Carousel1.jpg",
           "title": "Image 1",
           "description": " This is image description "
+        },
+        {
+          "url": "images/Carousel2.jpg",
+          "title": "Image 1",
+          "description": " This is image description "
+        },
+        {
+          "url": "images/Carousel3.jpg",
+          "title": "Image 1",
+          "description": " This is image description "
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://data.si/en/wp-content/uploads/2019/07/company-size-slovenia.jpg",
+          "title": "img1",
+          "caption": "Data is the backbone of the digital world, driving decisions in nearly every industry. In the future, data will become even more crucial as AI and machine learning evolve. The volume of data generated globally is expected to grow exponentially, creating both challenges and opportunities. Future technologies will rely heavily on data for personalization, automation, and innovation. However, data security and privacy will become major concerns as more personal information is collected.",
+          "header": "Data and Future"
+        },
+        {
+          "url": "https://media.istockphoto.com/id/1181250359/photo/business-people.jpg?s=612x612&w=0&k=20&c=1DFEPJdcvlhFdQYp-hzj2CYXXRn-b6qYoPgyOptZsck=",
+          "title": "img1",
+          "caption": "Fostering a collaborative office culture where every voice is heard, and every contribution matters. We believe in teamwork, inclusivity, and empowering each individual to thrive and succeed together.In a world where data is often considered the new oil, investing in comprehensive data solutions is crucial for businesses looking to innovate and thrive in an increasingly data-driven economy.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information",
+          "header": "Office Culture"
+        },
+        {
+          "url": "https://cdn.create.vista.com/api/media/small/236003572/stock-photo-professional-young-multiethnic-business-team-discussing-work-office. ",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information.designed to handle massive datasets efficiently.These platforms allow businesses to store, manage, and analyze complex data",
+          "header": "Solutions driven strategies"
+        },
+        {
+          "url": "https://t3.ftcdn.net/jpg/05/24/37/16/360_F_524371662_i8JkwIuMQkwJLQJGgaU7dqQ8pVzqhErW.jpg",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Advanced analytics tools provide deeper insights through predictive and prescriptive analytics.These tools help organizations anticipate future trends.Consequently, businesses can make proactive decisions that align with their strategic goals.",
+          "header": "Solutions driven strategies"
+        },
+        {
+          "url": "https://t3.ftcdn.net/jpg/05/79/48/52/360_F_579485255_hzHox0stuQmBx5QViwnQqQjk7RD2AJza.jpg",
+          "title": "img1",
+          "caption": "culture where every voice is heard, and every contribution matters. We believe in teamwork, inclusivity, and empowering each individual to thrive and succeed together.In a world where data is often considered the new oil, investing in comprehensive data solutions is crucial for businesses looking to innovate and thrive in an increasingly data-driven economy.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information",
+          "header": "Office environment"
+        },
+        {
+          "url": "https://png.pngtree.com/thumb_back/fh260/png-vector/20200530/ourmid/pngtree-indoor-office-png-image_2215291.jpg",
+          "title": "img1",
+          "caption": "Leveraging collective problem-solving skills, our groups tackle challenges with creativity and determination. Together, we break down barriers, innovate solutions, and drive success as a united force.Data solutions are essential in today's digital landscape, providing businesses with the tools to collect, analyze, and leverage vast amounts of information.designed to handle massive datasets efficiently.These platforms allow businesses to store, manage, and analyze complex data",
+          "header": "Workforce"
         }
       ]
     },
     {
-      "id": "7c9d",
-      "username": "ritesh",
-      "email": "ritesh@gmail.com",
-      "city": "ndb",
-      "phone": "35346743746",
-      "images": [
-        {
-          "url": "images/Carousel3.jpg",
-          "title": "Image 2",
-          "description": " This is image description "
-        }
-      ]
+      "id": "acb5",
+      "username": "Priya",
+      "email": "priya@gmail.com",
+      "city": "Deolali",
+      "phone": "8080808080"
     },
     {
-      "id": "11f3",
-      "username": "ritesh",
-      "email": "ritesh@gmail.com",
-      "city": "nagar",
-      "phone": "3234344556",
-      "images": [
-        {
-          "url": "images/Carousel3.jpg",
-          "title": "Image 3",
-          "description": " This is image description "
-        }
-      ]
+      "id": "c313",
+      "username": "Gauri",
+      "email": "gauri@gmail.com",
+      "city": "Delhi",
+      "phone": "7070707070"
+    },
+    {
+      "id": "e334",
+      "username": "Sejal",
+      "password": "sejal#12",
+      "email": "sejal@gmail.com",
+      "city": "Mumbai",
+      "phone": "6060606060"
+    },
+    {
+      "id": "28a6",
+      "username": "test",
+      "password": "test@123",
+      "email": "test@gmail.com",
+      "city": "test",
+      "phone": "1234567994"
+    }
+  ],
+  "SignUpUser": [
+    {
+      "username": "Gauri",
+      "password": "12345678",
+      "city": "Pune",
+      "contactno": "9878675645",
+      "gender": "Female",
+      "id": "b3db"
+    },
+    {
+      "id": "87d1",
+      "username": "vaishnavi",
+      "password": "123456789",
+      "city": "Pune",
+      "contactno": "9090909090",
+      "gender": "female"
+    },
+    {
+      "id": "3395",
+      "username": "Priya",
+      "password": "1234567890",
+      "city": "Deolali",
+      "contactno": "9090909090",
+      "gender": "female"
+    },
+    {
+      "id": "3572",
+      "username": "OM",
+      "password": "12",
+      "city": "Deolali",
+      "contactno": "98",
+      "gender": "male"
+    },
+    {
+      "id": "2173",
+      "username": "ewwef",
+      "password": "Pass@123",
+      "city": "Pune",
+      "contactno": "3433545678",
+      "gender": "female"
+    },
+    {
+      "id": "26b1",
+      "username": "vaishnavi",
+      "password": "Vaishu#123",
+      "city": "Pune",
+      "contactno": "9090909090",
+      "gender": "female"
     }
   ],
   "AboutUS": [
@@ -62,250 +163,252 @@
           "id": "1",
           "url": "images/css3.jpg",
           "title": "CSS3",
-          
           "description1": "Cascading Style Sheets Level 3 (CSS3) is a styling language that's used to make web pages more attractive and user-friendly. It's the latest version of CSS and the successor to CSS2.",
           "description2": "CSS3 (Cascading Style Sheets Level 3) is the latest version of the CSS standard used to style web pages. It introduces new features that enhance design flexibility and interactivity, such as:",
-          
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"CSS 3",
-              
-            "contents":[
-            
-            {
-              "title": "Selectors",
-              "description": "More powerful ways to target HTML elements."
-            },
-            {
-              "title": "Flexbox and Grid",
-              "description": "Layout models for responsive, flexible designs."
-            },
-            {
-              "title": "Transitions & Animations",
-              "description": "For smooth, dynamic effects."
-            },
-            {
-              "title": "Transforms",
-              "description": "2D/3D rotation, scaling, and more."
+              "title": "CSS 3",
+              "contents": [
+                {
+                  "title": "Selectors",
+                  "description": "More powerful ways to target HTML elements."
+                },
+                {
+                  "title": "Flexbox and Grid",
+                  "description": "Layout models for responsive, flexible designs."
+                },
+                {
+                  "title": "Transitions & Animations",
+                  "description": "For smooth, dynamic effects."
+                },
+                {
+                  "title": "Transforms",
+                  "description": "2D/3D rotation, scaling, and more."
+                }
+              ]
             }
-          ]
-        }
-      ],
-          "description3": "CSS3 makes web development more powerful and user-friendly."  
+          ],
+          "description3": "CSS3 makes web development more powerful and user-friendly."
         },
-
         {
           "id": "2",
           "url": "images/HTML5.jpg",
           "title": "HTML5",
-
           "description1": "HTML5 (Hypertext Markup Language 5) is a markup language used for structuring and presenting hypertext documents on the World Wide Web.",
           "description2": "HTML5 is the latest version of the HyperText Markup Language (HTML), used to structure content on the web. It introduced significant improvements and new features, including:",
-
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"HTML 5",
-
-          "contents":[
-            {
-              "title": "New Semantic Elements",
-              "description": "Tags like <article>, <section>, <header>, and <footer> improve document structure and readability."
-            },
-            {
-              "title": "Multimedia Support",
-              "description": "Native support for audio (<audio>) and video (<video>) elements without the need for external plugins."
-            },
-            {
-              "title": "Geolocation API",
-              "description": "Allows websites to access the user's geographic location."
-            },
-            {
-              "title": "Form Enhancements",
-              "description": "New input types (date, email, range, etc.) and form attributes make handling user input easier."
-            },
-            {
-              "title": "WebSockets",
-              "description": "Enable real-time communication between the browser and server."
+              "title": "HTML 5",
+              "contents": [
+                {
+                  "title": "New Semantic Elements",
+                  "description": "Tags like <article>, <section>, <header>, and <footer> improve document structure and readability."
+                },
+                {
+                  "title": "Multimedia Support",
+                  "description": "Native support for audio (<audio>) and video (<video>) elements without the need for external plugins."
+                },
+                {
+                  "title": "Geolocation API",
+                  "description": "Allows websites to access the user's geographic location."
+                },
+                {
+                  "title": "Form Enhancements",
+                  "description": "New input types (date, email, range, etc.) and form attributes make handling user input easier."
+                },
+                {
+                  "title": "WebSockets",
+                  "description": "Enable real-time communication between the browser and server."
+                }
+              ]
             }
-          ]
-        }
-      ],
-
-          "description3": "HTML5 enhances web application capabilities, enabling richer, more dynamic experiences across devices." 
+          ],
+          "description3": "HTML5 enhances web application capabilities, enabling richer, more dynamic experiences across devices."
         },
-
         {
           "id": "3",
           "url": "images/Bootstrap.jpg",
           "title": "Bootstrap",
-
           "description1": "Bootstrap is a popular, open-source front-end framework used for building responsive and mobile-first websites. It includes a collection of CSS and JavaScript tools for creating common UI components like forms, buttons, navigation bars, and more.",
           "description2": "Bootstrap is a popular open-source front-end framework used for developing responsive and mobile-first websites. It provides pre-designed HTML, CSS, and JavaScript components, making it easier to create modern web layouts quickly.",
-
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"Bootstrap",
-
-          "contents":[
-            {
-              "title": "Responsive Grid System",
-              "description": " A flexible 12-column grid system that adjusts layout based on screen size, ensuring compatibility across devices."
-            },
-            {
-              "title": "Pre-built Components",
-              "description": "Includes ready-to-use components like navigation bars, buttons, forms, modals, cards, and more."
-            },
-            {
-              "title": "Cross-browser Compatibility",
-              "description": "Ensures consistent performance across major browsers."
-            },
-            {
-              "title": "Customizable",
-              "description": "Easily customizable via variables and mixins, allowing developers to adapt the design to specific needs."
-            },
-            {
-              "title": "Cross-browser Compatibility",
-              "description": "Ensures consistent performance across major browsers."
-            },
-            {
-              "title": "JavaScript Plugins",
-              "description": "Includes interactive components like carousels, tooltips, and dropdowns powered by JavaScript/jQuery."
+              "title": "Bootstrap",
+              "contents": [
+                {
+                  "title": "Responsive Grid System",
+                  "description": " A flexible 12-column grid system that adjusts layout based on screen size, ensuring compatibility across devices."
+                },
+                {
+                  "title": "Pre-built Components",
+                  "description": "Includes ready-to-use components like navigation bars, buttons, forms, modals, cards, and more."
+                },
+                {
+                  "title": "Cross-browser Compatibility",
+                  "description": "Ensures consistent performance across major browsers."
+                },
+                {
+                  "title": "Customizable",
+                  "description": "Easily customizable via variables and mixins, allowing developers to adapt the design to specific needs."
+                },
+                {
+                  "title": "Cross-browser Compatibility",
+                  "description": "Ensures consistent performance across major browsers."
+                },
+                {
+                  "title": "JavaScript Plugins",
+                  "description": "Includes interactive components like carousels, tooltips, and dropdowns powered by JavaScript/jQuery."
+                }
+              ]
             }
-          ]
-        }
-      ],
-
-          "description3": "Bootstrap simplifies web development by providing a consistent design framework and responsive features, making it a favorite among developers." 
+          ],
+          "description3": "Bootstrap simplifies web development by providing a consistent design framework and responsive features, making it a favorite among developers."
         },
-
         {
           "id": "4",
           "url": "images/react.jpg",
           "title": "React",
-
           "description1": "ReactJS, commonly known as React, is a JavaScript library used for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, making the development process more efficient.",
           "description2": "React is an open-source JavaScript library used for building user interfaces, primarily for single-page applications. Developed by Facebook, it focuses on creating fast, scalable, and dynamic web applications by efficiently updating and rendering components and Key Features of React:",
-
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"React",
-
-          "contents":[
-            {
-              "title": "Component-Based Architecture",
-              "description": "UI is divided into reusable, self-contained components, simplifying development and maintenance."
-            },
-            {
-              "title": "JSX (JavaScript XML)",
-              "description": "A syntax extension that allows mixing HTML-like code with JavaScript, making code easier to write and understand."
-            },
-            {
-              "title": "One-Way Data Binding",
-              "description": "Data flows in one direction (from parent to child components), which makes code more predictable and easier to debug."
-            },
-            {
-              "title": "State Management",
-              "description": "React handles dynamic changes in application data using 'state' and 'props' to manage data flow and UI updates."
-            },
-            {
-              "title": "Ecosystem",
-              "description": "Integrates well with other tools, such as Redux for state management, and can be extended with libraries for routing and API handling."
-            },
-            {
-              "title": "Virtual DOM",
-              "description": "React uses a virtual representation of the DOM to update only the parts of the page that change, improving performance."
+              "title": "React",
+              "contents": [
+                {
+                  "title": "Component-Based Architecture",
+                  "description": "UI is divided into reusable, self-contained components, simplifying development and maintenance."
+                },
+                {
+                  "title": "JSX (JavaScript XML)",
+                  "description": "A syntax extension that allows mixing HTML-like code with JavaScript, making code easier to write and understand."
+                },
+                {
+                  "title": "One-Way Data Binding",
+                  "description": "Data flows in one direction (from parent to child components), which makes code more predictable and easier to debug."
+                },
+                {
+                  "title": "State Management",
+                  "description": "React handles dynamic changes in application data using 'state' and 'props' to manage data flow and UI updates."
+                },
+                {
+                  "title": "Ecosystem",
+                  "description": "Integrates well with other tools, such as Redux for state management, and can be extended with libraries for routing and API handling."
+                },
+                {
+                  "title": "Virtual DOM",
+                  "description": "React uses a virtual representation of the DOM to update only the parts of the page that change, improving performance."
+                }
+              ]
             }
-          ]
-        }
-      ],
-
-          "description3": "React is widely used for building interactive, fast, and scalable web applications, making it one of the most popular JavaScript libraries today." 
+          ],
+          "description3": "React is widely used for building interactive, fast, and scalable web applications, making it one of the most popular JavaScript libraries today."
         },
-
         {
           "id": "5",
           "url": "images/python.jpg",
           "title": "Python",
-
           "description1": "Python is a versatile, high-level programming language known for its readability and simplicity. It’s widely used in various fields, including web development, data analysis, artificial intelligence, scientific computing, and more.",
           "description2": "Python is a high-level, general-purpose programming language known for its simplicity, readability, and versatility. Created by Guido van Rossum in 1991, it is widely used in various fields, from web development to data science and machine learning.",
-
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"Python",
-
-          "contents":[
-            {
-              "title": "Easy Syntax",
-              "description": "Python's syntax is clear and concise, making it easy to learn and use, especially for beginners."
-            },
-            {
-              "title": "Extensive Standard Library",
-              "description": "It comes with a comprehensive standard library for tasks like file handling, regular expressions, and data manipulation."
-            },
-            {
-              "title": "Object-Oriented and Functional",
-              "description": "Supports both object-oriented programming and functional programming paradigms."
-            },
-            {
-              "title": "Cross-Platform",
-              "description": "Python runs on multiple platforms, including Windows, macOS, and Linux."
-            },
-            {
-              "title": "Large Ecosystem",
-              "description": "Python has a vast ecosystem of third-party libraries and frameworks for web development (Django, Flask), data analysis (Pandas, NumPy), and machine learning (TensorFlow, Scikit-learn)."
+              "title": "Python",
+              "contents": [
+                {
+                  "title": "Easy Syntax",
+                  "description": "Python's syntax is clear and concise, making it easy to learn and use, especially for beginners."
+                },
+                {
+                  "title": "Extensive Standard Library",
+                  "description": "It comes with a comprehensive standard library for tasks like file handling, regular expressions, and data manipulation."
+                },
+                {
+                  "title": "Object-Oriented and Functional",
+                  "description": "Supports both object-oriented programming and functional programming paradigms."
+                },
+                {
+                  "title": "Cross-Platform",
+                  "description": "Python runs on multiple platforms, including Windows, macOS, and Linux."
+                },
+                {
+                  "title": "Large Ecosystem",
+                  "description": "Python has a vast ecosystem of third-party libraries and frameworks for web development (Django, Flask), data analysis (Pandas, NumPy), and machine learning (TensorFlow, Scikit-learn)."
+                }
+              ]
             }
-          ]
-        }
-      ],
-
-          "description3": "Python is popular for web development, automation, artificial intelligence, data science, and more, making it one of the most widely used programming languages globally." 
+          ],
+          "description3": "Python is popular for web development, automation, artificial intelligence, data science, and more, making it one of the most widely used programming languages globally."
         },
-
         {
           "id": "6",
           "url": "images/java.jpg",
           "title": "Java",
-
           "description1": "Java is a popular, object-oriented programming language that's used for a variety of applications",
           "description2": "Java is a versatile, high-level, object-oriented programming language developed by Sun Microsystems (now Oracle) in 1995. It is designed to have a 'write once, run anywhere' philosophy, meaning Java code can run on any device with a Java Virtual Machine (JVM).",
-
-          "syllabus":[
+          "syllabus": [
             {
-              "title":"Java",
-
-          "contents":[
-            {
-              "title": "Platform Independence",
-              "description": "Java code is compiled into bytecode, which can be executed on any device that has a JVM, making it platform-independent."
-            },
-            {
-              "title": "Object-Oriented",
-              "description": "Follows the object-oriented programming (OOP) paradigm, supporting concepts like inheritance, encapsulation, and polymorphism."
-            },
-            {
-              "title": "Robust and Secure",
-              "description": "Java provides strong memory management, exception handling, and security features, making it reliable for large applications."
-            },
-            {
-              "title": "Multithreading",
-              "description": "Java natively supports multithreading, allowing concurrent execution of two or more parts of a program to optimize performance."
-            },
-            {
-              "title": "Rich API",
-              "description": "Java has an extensive library of APIs for networking, data structures, graphical user interfaces (GUI), input/output, and more."
-            },
-            {
-              "title": "Automatic Memory Management (Garbage Collection)",
-              "description": "Java automatically manages memory allocation and deallocation, reducing memory leaks and programmer errors."
+              "title": "Java",
+              "contents": [
+                {
+                  "title": "Platform Independence",
+                  "description": "Java code is compiled into bytecode, which can be executed on any device that has a JVM, making it platform-independent."
+                },
+                {
+                  "title": "Object-Oriented",
+                  "description": "Follows the object-oriented programming (OOP) paradigm, supporting concepts like inheritance, encapsulation, and polymorphism."
+                },
+                {
+                  "title": "Robust and Secure",
+                  "description": "Java provides strong memory management, exception handling, and security features, making it reliable for large applications."
+                },
+                {
+                  "title": "Multithreading",
+                  "description": "Java natively supports multithreading, allowing concurrent execution of two or more parts of a program to optimize performance."
+                },
+                {
+                  "title": "Rich API",
+                  "description": "Java has an extensive library of APIs for networking, data structures, graphical user interfaces (GUI), input/output, and more."
+                },
+                {
+                  "title": "Automatic Memory Management (Garbage Collection)",
+                  "description": "Java automatically manages memory allocation and deallocation, reducing memory leaks and programmer errors."
+                }
+              ]
             }
-          ]
+          ],
+          "description3": "Java is popular in web development, mobile applications (Android), enterprise software, and embedded systems, known for its stability, scalability, and cross-platform capabilities."
         }
       ],
-
-          "description3": "Java is popular in web development, mobile applications (Android), enterprise software, and embedded systems, known for its stability, scalability, and cross-platform capabilities." 
-        }
-      ]
+      "id": "e4ae"
+    }
+  ],
+  "contactus": [
+    {
+      "contactuser": "Vaishnavi",
+      "useremail": "vaishnavi@gmail.com",
+      "contact": "9876543210",
+      "message": "Hello",
+      "id": "f9b6"
+    },
+    {
+      "id": "bad2",
+      "contactuser": "Sejal Rasal",
+      "useremail": "sejal@gmail.com",
+      "contact": "8029340927",
+      "message": "hello hiii bye"
+    },
+    {
+      "id": "d448",
+      "contactuser": "Priya",
+      "useremail": "priya@gmail.com",
+      "contact": "9834239042",
+      "message": "Hello"
+    },
+    {
+      "id": "55e4",
+      "contactuser": "test",
+      "useremail": "teest@gmail.com",
+      "contact": "1234567890",
+      "message": "Test"
     }
   ]
 }

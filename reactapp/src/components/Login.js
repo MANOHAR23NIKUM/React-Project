@@ -1,219 +1,232 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Checkbox from '@mui/material/Checkbox';
-import CssBaseline from '@mui/material/CssBaseline';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Divider from '@mui/material/Divider';
-import FormLabel from '@mui/material/FormLabel';
-import FormControl from '@mui/material/FormControl';
-import Link from '@mui/material/Link';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-import MuiCard from '@mui/material/Card';
-import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
-// import ForgotPassword from './ForgotPassword';
-// import getSignInTheme from './theme/getSignInTheme';
-// import { GoogleIcon, FacebookIcon, SitemarkIcon } from './CustomIcons';
-// import TemplateFrame from './TemplateFrame';
-import '../style/Loginbody.css'
+import { Button, FormControl, FormGroup, InputLabel, Input, styled, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { addUser } from '../service/api';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Card = styled(MuiCard)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  alignSelf: 'center',
-  width: '100%',
-  padding: theme.spacing(4),
-  gap: theme.spacing(2),
-  margin: 'auto',
-  [theme.breakpoints.up('sm')]: {
-    maxWidth: '450px',
-  },
-  boxShadow:
-    'hsla(220, 30%, 5%, 0.05) 0px 5px 15px 0px, hsla(220, 25%, 10%, 0.05) 0px 15px 35px -5px',
-  ...theme.applyStyles('dark', {
-    boxShadow:
-      'hsla(220, 30%, 5%, 0.5) 0px 5px 15px 0px, hsla(220, 25%, 10%, 0.08) 0px 15px 35px -5px',
-  }),
-}));
+const Container = styled(FormGroup)`
+  width: 50%;
+  margin: 5% 0 0 25%;
+  & > div {
+    margin-top: 20px;
+  }
+  & > Button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+`;
 
-const SignInContainer = styled(Stack)(({ theme }) => ({
-  height: '100%',
-  padding: 20,
-  backgroundImage:
-    'radial-gradient(ellipse at 50% 50%, hsl(210, 100%, 97%), hsl(0, 0%, 100%))',
-  backgroundRepeat: 'no-repeat',
-  ...theme.applyStyles('dark', {
-    backgroundImage:
-      'radial-gradient(at 50% 50%, hsla(210, 100%, 16%, 0.5), hsl(220, 30%, 5%))',
-  }),
-}));
+const initialValue = {
+  username: '',
+  email: '',
+  city: '',
+  phone: '',
+};
 
-export default function Login() {
-  const [mode, setMode] = React.useState('light');
-  const [showCustomTheme, setShowCustomTheme] = React.useState(true);
-  const defaultTheme = createTheme({ palette: { mode } });
-//   const SignInTheme = createTheme(getSignInTheme(mode));
-  const [emailError, setEmailError] = React.useState(false);
-  const [emailErrorMessage, setEmailErrorMessage] = React.useState('');
-  const [passwordError, setPasswordError] = React.useState(false);
-  const [passwordErrorMessage, setPasswordErrorMessage] = React.useState('');
-  const [open, setOpen] = React.useState(false);
+// Example valid users data (this would typically come from your database)
+const validUsers = [
+  { username: 'Vaishnavi', password:'vaishu#123'  },
+  { username: 'Gauri', password:'gauri#12' },
+];
 
-  // This code only runs on the client side, to determine the system color preference
-  React.useEffect(() => {
-    // Check if there is a preferred mode in localStorage
-    const savedMode = localStorage.getItem('themeMode');
-    if (savedMode) {
-      setMode(savedMode);
-    } else {
-      // If no preference is found, it uses system preference
-      const systemPrefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)',
-      ).matches;
-      setMode(systemPrefersDark ? 'dark' : 'light');
+const AddUser = () => {
+  const [user, setUser] = useState(initialValue);
+  const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
+
+  const onValueChange = (e) => {
+    e.preventDefault();
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = (data) => {
+    const errors = {};
+
+    if (!data.username.trim()) {
+      errors.username = "Username is required";
     }
-  }, []);
-
-  const toggleColorMode = () => {
-    const newMode = mode === 'dark' ? 'light' : 'dark';
-    setMode(newMode);
-    localStorage.setItem('themeMode', newMode); // Save the selected mode to localStorage
-  };
-
-  const toggleCustomTheme = () => {
-    setShowCustomTheme((prev) => !prev);
-  };
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
-
-  const validateInputs = () => {
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
-
-    let isValid = true;
-
-    if (!email.value || !/\S+@\S+\.\S+/.test(email.value)) {
-      setEmailError(true);
-      setEmailErrorMessage('Please enter a valid email address.');
-      isValid = false;
-    } else {
-      setEmailError(false);
-      setEmailErrorMessage('');
+    if(!data.password.trim()){
+        errors.password="Password is required";
+    }else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,}$/.test(data.password)){
+        errors.password="Password is Invalid"
     }
 
-    if (!password.value || password.value.length < 6) {
-      setPasswordError(true);
-      setPasswordErrorMessage('Password must be at least 6 characters long.');
-      isValid = false;
-    } else {
-      setPasswordError(false);
-      setPasswordErrorMessage('');
-    }
+    return errors;
+  };
 
-    return isValid;
+  const userExists = (data) => {
+    return validUsers.some(user => 
+      user.username === data.username &&
+      user.password === data.password
+    );
+  };
+
+  const addUserDetails = async () => {
+    const newErrors = validateForm(user);
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      if (userExists(user)) {
+        alert("Login Successful");
+        navigate('/home');
+      } else {
+        alert("Your data is not valid. Please sign up first.");
+      }
+    } else {
+      alert("Form submission failed due to validation errors");
+    }
   };
 
   return (
-<div className='login-body'>
+    <div>
+      <Container>
+        <Typography variant='h4'>User Login</Typography>
+        <FormControl>
+          <InputLabel>Username:</InputLabel>
+          <Input onChange={onValueChange} name='username' value={user.username} />
+          {errors.username && <span className='error-message' style={{ color: 'red'}}>{errors.username}</span>}
+        </FormControl>
+        <FormControl>
+          <InputLabel>Password:</InputLabel>
+          <Input onChange={onValueChange} name='password' value={user.password} />
+          {errors.password && <span className='error-message' style={{ color: 'red'}}>{errors.password}</span>}
+        </FormControl>
 
-<Card variant="outlined">
-            {/* <SitemarkIcon /> */}
-            <Typography
-              component="h1"
-              variant="h4"
-              sx={{ width: '100%', fontSize: 'clamp(2rem, 10vw, 2.15rem)' }}
-            >
-              Sign in
-            </Typography>
-            <Box
-              component="form"
-              onSubmit={handleSubmit}
-              noValidate
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                width: '100%',
-                gap: 2,
-              }}
-            >
-              <FormControl>
-                <FormLabel htmlFor="email">Email</FormLabel>
-                <TextField
-                  error={emailError}
-                  helperText={emailErrorMessage}
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  autoComplete="email"
-                  autoFocus
-                  required
-                  fullWidth
-                  variant="outlined"
-                  color={emailError ? 'error' : 'primary'}
-                  sx={{ ariaLabel: 'email' }}
-                />
-              </FormControl>
-              <FormControl>
-                
-                <TextField
-                  error={passwordError}
-                  helperText={passwordErrorMessage}
-                  name="password"
-                  placeholder="••••••"
-                  type="password"
-                  id="password"
-                  autoComplete="current-password"
-                  autoFocus
-                  required
-                  fullWidth
-                  variant="outlined"
-                  color={passwordError ? 'error' : 'primary'}
-                />
-              </FormControl>
-             
-          
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                onClick={validateInputs}
-              >
-                Sign in
-              </Button>
-              <Typography sx={{ textAlign: 'center' }}>
-                Don&apos;t have an account?{' '}
-                <span>
-                  <Link
-                    href="/material-ui/getting-started/templates/sign-in/"
-                    variant="body2"
-                    sx={{ alignSelf: 'center' }}
-                  >
-                    Sign up
-                  </Link>
-                </span>
-              </Typography>
-            </Box>
-         
+        <Button variant="contained" onClick={addUserDetails}>Login</Button>
+        <p style={{textAlign:'right'}}>If you don't have account , Please <Link to="/signUp">SignUp</Link> </p>
+      </Container>
+    </div>
+  );
+}
+
+export default AddUser;
+
+
+
+
+
+
+
+
+
+
+// import { Button,FormControl, FormGroup, InputLabel,Input, styled, Typography } from '@mui/material'
+// import React, { useState } from 'react'
+// import { addUser } from '../service/api'
+// import { useNavigate } from 'react-router-dom'
+
+// const Container=styled(FormGroup)`
+// width:50%;
+// margin:5% 0 0 25%;
+// & >div{
+// margin-top:20px;
+// }
+// & >Button{
+//     margin-top:10px;
+//     margin-bottom:20px;
+// }
+// `
+// const initialValue={
+//     username:'',
+//     email:'',
+//     city:'',
+//     phone:'',
+// };
+
+// const AddUser = () => {
+//     const [user,setUser]=useState(initialValue);
+
+//     // const [formData,setFormData]=useState(initialValue);
+//     const[errors,setErrors]=useState({});
+   
+//     const navigate=useNavigate();
+
+//     const onValueChange=(e)=>{
+//         e.preventDefault();
+//         setUser({...user,[e.target.name]:e.target.value});
+//         console.log(user);
+   
+//     } 
+
+
+// const validateForm=(data)=>{
+//     const errors={};
+
+//     if (!data.username.trim()){
+//         errors.username="Username is required";
+//     }
+    
+//     if(!data.email.trim()){
+//         errors.email="Email is required";
+//     }else if (!/^\S+@\S+\.\S+$/.test(data.email)){
+//         errors.email="Email is Invalid"
+//     }
+    
+//     if(!data.city.trim()){
+//         errors.city="City is required";
+//     }
+    
+//     if(!data.phone.trim()){
+//         errors.phone="Contact no  is required";
+//     }else if (!/^\d{10}$/.test(data.phone)){
+//         errors.phone="Conatct number must be 10 digits"
+//     }
+
+//     return errors;
         
-          </Card>
-</div>
-        )
-    }
+// };
+
+
+// const addUserDetails=async()=>{
+   
+//     // api call
+//     const newErrors=validateForm(user);
+//     setErrors(newErrors);
+    
+//     // Check if there is no errors
+//     if (Object.keys(newErrors).length === 0){
+//         await addUser(user);
+//         alert("Form Submitted Successfully");
+//         navigate('/home')
+//     }else{
+//         alert("form Submission Failed due to valiadtion errors");
+//     }
+   
+// }
+
+
+// return (
+//     <div>
+//         <Container>
+
+//         <Typography variant='h4'>User Login</Typography>
+//             <FormControl>
+//                 <InputLabel>Username:</InputLabel>
+//                 <Input onChange={(e)=>onValueChange(e)} name='username' value={user.username}/>
+//                 {errors.username && <span className='error-message' style={{color:'red'}}>{errors.username}</span>}
+//             </FormControl>
+
+//             <FormControl>
+//                 <InputLabel>Email:</InputLabel>
+//                 <Input onChange={(e)=>onValueChange(e)} name='email' value={user.email}/>
+//                 {errors.email && <span className='error-message' style={{color:'red'}}>{errors.email}</span>}
+//             </FormControl>
+
+//             <FormControl>
+//                 <InputLabel>City:</InputLabel>
+//                 <Input onChange={(e)=>onValueChange(e)} name='city' value={user.city}/>
+//                 {errors.city && <span className='error-message' style={{color:'red'}} >{errors.city}</span>}
+//             </FormControl>
+
+//             <FormControl>
+//                 <InputLabel>Contact No:</InputLabel>
+//                 <Input onChange={(e)=>onValueChange(e)} name='phone' value={user.phone}/>
+//                 {errors.phone && <span className='error-message' style={{color:'red'}} >{errors.phone}</span>}
+//             </FormControl>
+
+//             <Button variant="contained" onClick={addUserDetails}>Login</Button>
+//         </Container>
+//     </div>
+//   )
+// }
+
+// export default AddUser

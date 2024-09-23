@@ -1,25 +1,26 @@
-.navbar{
-    background: radial-gradient(circle, rgb(189 245 205) 22%, rgba(219,219,220,1) 68%, rgb(59, 131, 194) 100%);
-    
-}
 .logo img{
-    width: 7vw;
-    margin-right: 20px;
-    padding: 2px;
+    height: 50px;
+    width: 50px;
 }
-.righttab1{
-    margin-left: 40%;
-    font-size: 1vw;
+
+.dropdown{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: 600;
 }
-.righttab{
-    margin-left: 2%;
-    font-size: 1vw;
-}
-@media only screen and (max-width: 600px){
-    .navbar{
-        width: 100%;
-    }
-    .righttab1{
-        margin-left: 25%;
+
+.dropdown1{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    background:green;
+    margin-left:5px;
+    border-radius:5px;
+}   
+@media screen and (max-width: 1000px) {
+    .dropdown1 {
+        margin-left: 0px !important;
+        margin-top: 2px;
     }
 }
