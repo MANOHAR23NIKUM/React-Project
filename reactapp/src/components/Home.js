@@ -15,7 +15,7 @@ const Home = () => {
   const cardImages = Database.Cardsimg.flatMap(
     (card) => card.images.slice(3, 6) || []
   );
-  const cardsBackgroundImage = Database.BackgroundImages?.[0]?.cardsSection;
+  // const cardsBackgroundImage = Database.BackgroundImages?.[0]?.cardsSection;
 
   return (
     <div>
@@ -28,7 +28,7 @@ const Home = () => {
               <img
                 src={record.url}
                 alt={record.title}
-                style={{ width: "100%", height: "800px", objectFit: "cover" }}
+                style={{ width: "100%", height: "520px", objectFit: "cover" }}
               />
               <br />
               {/* <h2>{record.title}</h2> */}
@@ -174,7 +174,7 @@ const Home = () => {
             <Button
               variant="contained"
               size="medium"
-              style={{ borderRadius: "0 10px 0 10px" }}
+              style={{ borderRadius: "0 10px 0 10px",marginBottom:'15px' }}
             >
               show more
             </Button>

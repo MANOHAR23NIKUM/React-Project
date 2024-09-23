@@ -1,0 +1,10 @@
+.signupform{
+    width:40%;
+    padding:1%;
+    margin:0 auto;
+    margin-top:2%;
+    margin-bottom:2%;
+    border:1px solid rgb(190, 189, 189);
+    box-shadow:0 1px 5px rgb(184, 168, 168);
+    border-radius: 1%;
+}

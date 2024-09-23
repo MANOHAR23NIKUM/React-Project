@@ -9,9 +9,9 @@ const ServiceDetails = () => {
 console.log(id);
 
   const cardImages = Database.Cardsimg.flatMap((card) => card.images || []);
-  const FilterData = cardImages.filter((val) => val.id == id);
+  const FilterData = cardImages.filter((val) => val.id === id);
   console.log(FilterData);
-  const filterSyllabus = Database?.Cardsimg?.images?.filter((val)=>val.id == id)
+  const filterSyllabus = Database?.Cardsimg?.images?.filter((val)=>val.id === id)
   console.log(filterSyllabus)
   return (
     <Container>
@@ -21,7 +21,7 @@ console.log(id);
             <div className="div-img">
               <img
                 className="service-img"
-                src={`${process.env.PUBLIC_URL}/${val.url}`}
+                src={`${process.env.PUBLIC_URL}/${val.url}`} alt="serviceimg"
               />
             </div>
             <p className='service-title' >{val.title}</p>

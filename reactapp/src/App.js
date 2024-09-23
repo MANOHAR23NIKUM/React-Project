@@ -14,6 +14,7 @@ import Services from './components/Services';
 import ServiceDetails from './components/ServiceDetails';
 // import NavigationBar from './components/NavigationBar';
 import Login from './components/Login';
+import Admin from './components/Admin';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
     <Navbar/>
      {/* <NavigationBar/> */}
       <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/services' element={<Services/>}/>
@@ -31,7 +32,9 @@ function App() {
           <Route path="/all" element={<AllUser/>}/>
           <Route path="/edit/:id" element={<EditUser/>}/>
           <Route path="/service-details/:id" element={<ServiceDetails/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route path='/' element={<Login/>}/>
+          <Route path='/signUp' element={<SignUp/>}/>
+          <Route path='/admin' element={<Admin/>}/>
       </Routes> 
     </BrowserRouter>
     <Footer/>
