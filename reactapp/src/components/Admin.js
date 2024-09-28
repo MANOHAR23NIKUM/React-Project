@@ -3,17 +3,24 @@ import React, { useState } from 'react';
 import { addUser } from '../service/api';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Container = styled(FormGroup)`
-  width: 50%;
-  margin: 5% 0 0 25%;
-  & > div {
-    margin-top: 20px;
-  }
-  & > Button {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-`;
+const Container=styled(FormGroup)`
+width:40%;
+margin:0 auto;
+margin-bottom:5%;
+margin-top:5%;
+background-color:white;
+padding:2%;
+border-radius:2%;
+box-shadow:0 1px 9px rgb(184, 168, 168);
+& >div{
+margin-top:10px;
+
+}
+& >Button{
+    margin-top:10px;
+
+}
+`
 
 const initialValue = {
   username: '',
@@ -41,10 +48,10 @@ const AddUser = () => {
   const validateForm = (data) => {
     const errors = {};
 
-    if (!data.username.trim()) {
+    if (!data.username?.trim()) {
       errors.username = "Username is required";
     }
-    if(!data.password.trim()){
+    if(!data.password?.trim()){
         errors.password="Password is required";
     }else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,}$/.test(data.password)){
         errors.password="Password is Invalid"
@@ -92,7 +99,7 @@ const AddUser = () => {
         </FormControl>
 
         <Button variant="contained" onClick={addUserDetails}>Login</Button>
-        <p style={{textAlign:'right'}}>If you don't have account , Please <Link to="/signUp">SignUp</Link> </p>
+        {/* <p style={{textAlign:'right'}}>If you don't have account , Please <Link to="/signUp">SignUp</Link> </p> */}
       </Container>
     </div>
   );

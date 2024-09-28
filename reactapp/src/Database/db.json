@@ -64,82 +64,36 @@
       ]
     },
     {
-      "id": "acb5",
+      "id": "a5a8",
       "username": "Priya",
+      "password": "priya#123",
       "email": "priya@gmail.com",
       "city": "Deolali",
-      "phone": "8080808080"
+      "phone": "6566874663"
     },
     {
-      "id": "c313",
-      "username": "Gauri",
-      "email": "gauri@gmail.com",
-      "city": "Delhi",
-      "phone": "7070707070"
-    },
-    {
-      "id": "e334",
-      "username": "Sejal",
-      "password": "sejal#12",
-      "email": "sejal@gmail.com",
-      "city": "Mumbai",
-      "phone": "6060606060"
-    },
-    {
-      "id": "28a6",
-      "username": "test",
-      "password": "test@123",
+      "id": "55e5",
+      "username": "Test",
+      "password": "test#123",
       "email": "test@gmail.com",
       "city": "test",
-      "phone": "1234567994"
+      "phone": "1234567890"
+    },
+    {
+      "id": "42b4",
+      "username": "Test",
+      "password": "test#123",
+      "email": "test@gmail.com",
+      "city": "Delhi",
+      "phone": "6566874663"
     }
   ],
   "SignUpUser": [
-    {
-      "username": "Gauri",
-      "password": "12345678",
-      "city": "Pune",
-      "contactno": "9878675645",
-      "gender": "Female",
-      "id": "b3db"
-    },
-    {
-      "id": "87d1",
-      "username": "vaishnavi",
-      "password": "123456789",
-      "city": "Pune",
-      "contactno": "9090909090",
-      "gender": "female"
-    },
     {
       "id": "3395",
       "username": "Priya",
       "password": "1234567890",
       "city": "Deolali",
-      "contactno": "9090909090",
-      "gender": "female"
-    },
-    {
-      "id": "3572",
-      "username": "OM",
-      "password": "12",
-      "city": "Deolali",
-      "contactno": "98",
-      "gender": "male"
-    },
-    {
-      "id": "2173",
-      "username": "ewwef",
-      "password": "Pass@123",
-      "city": "Pune",
-      "contactno": "3433545678",
-      "gender": "female"
-    },
-    {
-      "id": "26b1",
-      "username": "vaishnavi",
-      "password": "Vaishu#123",
-      "city": "Pune",
       "contactno": "9090909090",
       "gender": "female"
     }
@@ -383,32 +337,11 @@
   ],
   "contactus": [
     {
-      "contactuser": "Vaishnavi",
-      "useremail": "vaishnavi@gmail.com",
-      "contact": "9876543210",
-      "message": "Hello",
-      "id": "f9b6"
-    },
-    {
-      "id": "bad2",
-      "contactuser": "Sejal Rasal",
-      "useremail": "sejal@gmail.com",
-      "contact": "8029340927",
-      "message": "hello hiii bye"
-    },
-    {
-      "id": "d448",
-      "contactuser": "Priya",
-      "useremail": "priya@gmail.com",
-      "contact": "9834239042",
-      "message": "Hello"
-    },
-    {
-      "id": "55e4",
-      "contactuser": "test",
-      "useremail": "teest@gmail.com",
-      "contact": "1234567890",
-      "message": "Test"
+      "id": "f62c",
+      "contactuser": "Akshada",
+      "useremail": "akshada@gmail.com",
+      "contact": "9834239045",
+      "message": "hello"
     }
   ]
 }
