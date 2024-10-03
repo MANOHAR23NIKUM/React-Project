@@ -59,7 +59,7 @@ const AllUser = () => {
         <StyledTable>
           <TableHead>
             <THead>
-              <TableCell>Name</TableCell>
+              <TableCell>Name</TableCell>  
               <TableCell>Email</TableCell>
               <TableCell>City</TableCell>
               <TableCell>Contact No.</TableCell>
@@ -108,6 +108,27 @@ const AllUser = () => {
       </Grid>
    </Grid>
    </>
+
+  // <>
+  // <Table striped bordered hover>
+  //     <thead>
+  //       <tr>
+  //         <th>#</th>
+  //         <th>First Name</th>
+  //         <th>Last Name</th>
+  //         <th>Username</th>
+  //       </tr>
+  //     </thead>
+  //     <tbody>
+  //       <tr>
+  //         <td>1</td>
+  //         <td>Mark</td>
+  //         <td>Otto</td>
+  //         <td>@mdo</td>
+  //       </tr>
+  //     </tbody>
+  //   </Table>
+  // </>
   );
 }
 

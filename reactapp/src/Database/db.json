@@ -88,14 +88,11 @@
       "phone": "6566874663"
     }
   ],
-  "SignUpUser": [
+  "admin": [
     {
-      "id": "3395",
-      "username": "Priya",
-      "password": "1234567890",
-      "city": "Deolali",
-      "contactno": "9090909090",
-      "gender": "female"
+      "adminname": "Admin",
+      "adminpassword": "admin#123"
+     
     }
   ],
   "AboutUS": [

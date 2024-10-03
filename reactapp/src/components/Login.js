@@ -1,6 +1,6 @@
 import { Button, FormControl, FormGroup, InputLabel, Input, styled, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { addUser,allUser } from '../service/api';
+import {allUser } from '../service/api';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Container=styled(FormGroup)`
@@ -24,9 +24,7 @@ margin-top:10px;
 
 const initialValue = {
   username: '',
-  email: '',
-  city: '',
-  phone: '',
+  password:''
 };
 
 
