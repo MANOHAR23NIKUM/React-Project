@@ -27,7 +27,7 @@ const Services = () => {
               border: '2px solid transparent',
             }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow='0px 0px 4px black'; // black boxshodow on hover
+                e.currentTarget.style.boxShadow='0px 0px 8px black'; // black boxshodow on hover
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow='0px 0px 1px black'; // Remove boxshadow on mouse leave
