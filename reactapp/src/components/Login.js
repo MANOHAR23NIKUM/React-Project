@@ -71,7 +71,8 @@ const AddUser = () => {
     );
   };
 
-  const addUserDetails = async () => {
+  const userDetails = async () => {
+   
     const newErrors = validateForm(user);
     setErrors(newErrors);
 
@@ -102,7 +103,7 @@ const AddUser = () => {
           {errors.password && <span className='error-message' style={{ color: 'red'}}>{errors.password}</span>}
         </FormControl>
 
-        <Button variant="contained" onClick={addUserDetails}>Login</Button>
+        <Button variant="contained" onClick={userDetails}>Login</Button>
         <p style={{textAlign:'right'}}>If you don't have account , Please <Link to="/signUp">SignUp</Link> </p>
       </Container>
     </div>

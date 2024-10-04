@@ -7,7 +7,7 @@ const ProtectedRout = (props) => {
     useEffect(() => {
         let login = localStorage.getItem('login');
         if(!login) {
-            navigate('/')
+            // navigate('/');
         }
     });
 
