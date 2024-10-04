@@ -91,7 +91,7 @@
   "admin": [
     {
       "adminname": "Admin",
-      "adminpassword": "admin#123"
+      "adminpassword": "admin@123"
      
     }
   ],

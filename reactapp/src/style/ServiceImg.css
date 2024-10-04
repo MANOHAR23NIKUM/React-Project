@@ -1,46 +1,48 @@
-.service-img{
-    width: 250px;
-    height: 250px;
+.service-img {
+  width: 250px;
+  height: 250px;
 }
-.div-img{
-    text-align: center;
-
-}
-
-.service-title{
-    font-weight: bold;
-    font-size: larger;  
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px;
+.div-img {
+  text-align: center;
 }
 
-.service-descrip{
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; /* Limit to 3 lines */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-height: calc(1.2em*8);
-        text-align: justify;
+.service-title {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
 }
 
-.service-description1{
-    /* font-weight: bold; */
-    margin-left: 5opx;
+.service-descrip {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.2em * 8);
+  text-align: justify;
 }
 
-.service-body{
-    margin-top: 20px;
+.service-description1 {
+  /* font-weight: bold; */
+  /* margin-left: 5px; */
 }
 
-.content-title{
-    font-weight: bold;
+.service-body {
+  margin-top: 20px;
 }
 
-.content-li{
-    margin-left: 50px;
-    text-align: justify;
+.content-title {
+  font-weight: bold;
 }
 
-      
+.content-li {
+  margin-left: 50px;
+  text-align: justify;
+}
+@media ((min-width: 312px) and (max-width : 428px)) {
+ .content-li {
+    margin-left: 0px!important;
+  }
+}

@@ -31,18 +31,18 @@ function App() {
                  {/* <Route path="/service-details/:id" element={<ServiceDetails/>}/> */}
                     {/* <Route path="/add" element={<SignUp/>} /> */}
           {/* <Route path="/all" element={<AllUser/>}/> */}
-          <Route path='/' element={<Login/>}/>
-          <Route path='/signUp' element={<SignUp/>}/>
+          <Route path='/login' element={<Login/>}/>
           <Route path='/admin' element={<Admin/>}/>
-          <Route path="/home" element={<ProtectedRout Component={Home}/>} />
-          <Route path="/about" element={<ProtectedRout Component={About}/>} />
-          <Route path="/contact" element={<ProtectedRout Component={Contact}/>} />
+          <Route path='/signUp' element={<SignUp/>}/>
+          <Route path="/home" element={<Home/>} /> 
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/services" element={<ProtectedRout Component={Services}/>} />
           <Route path="/all" element={<ProtectedRout Component={AllUser}/>} />
           <Route path="/edit/:id" element={<ProtectedRout Component={EditUser}/>} />
           <Route path="/service-details/:id" element={<ProtectedRout Component={ServiceDetails}/>} />
       
-      </Routes> 
+        </Routes> 
     </BrowserRouter>
     <Footer/>
     </>

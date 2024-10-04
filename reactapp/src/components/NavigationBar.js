@@ -8,6 +8,9 @@
 //   return (
 //     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 //       <Container>
+//         {/* <div>
+//             <img src='/assets/images/bird2.jpg'/>
+//         </div> */}
 //         <Navbar.Brand href="#home">Knowledge House</Navbar.Brand>
 //         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 //         <Navbar.Collapse id="responsive-navbar-nav">
