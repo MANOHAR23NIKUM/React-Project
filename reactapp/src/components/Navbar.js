@@ -45,7 +45,7 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ backgroundColor:'white' ,color:'white'}} />
         <StyledNavbarCollapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{fontSize:'20',fontWeight:'500'}}>
-            <StyledNavLink href="/">Home</StyledNavLink>
+            <StyledNavLink href="/home">Home</StyledNavLink>
             <StyledNavLink href="/about">About</StyledNavLink>
             <StyledNavLink href="/services">Service</StyledNavLink>
             <StyledNavLink href="/contact">Contact</StyledNavLink>
